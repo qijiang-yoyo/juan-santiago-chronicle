@@ -12,7 +12,11 @@
     "evidenceLabel": "Working synthesis",
     "year": "2026",
     "directnessLabel": "Derived synthesis",
-    "artifactReadinessLabel": "Working only"
+    "artifactReadinessLabel": "Working only",
+    "claimScope": "chronicle synthesis",
+    "claimScopeLabel": "Chronicle synthesis",
+    "verificationState": "working",
+    "verificationStateLabel": "Working synthesis"
   },
   {
     "id": "timeline-v2",
@@ -27,7 +31,11 @@
     "evidenceLabel": "Working synthesis",
     "year": "2026",
     "directnessLabel": "Derived synthesis",
-    "artifactReadinessLabel": "Working only"
+    "artifactReadinessLabel": "Working only",
+    "claimScope": "chronicle synthesis",
+    "claimScopeLabel": "Chronicle synthesis",
+    "verificationState": "working",
+    "verificationStateLabel": "Working synthesis"
   },
   {
     "id": "launch-academy",
@@ -42,7 +50,11 @@
     "evidenceLabel": "Context source",
     "year": "2018",
     "directnessLabel": "Profile feature",
-    "artifactReadinessLabel": "Context artifact ready"
+    "artifactReadinessLabel": "Context artifact ready",
+    "claimScope": "biography bridge",
+    "claimScopeLabel": "Biography bridge",
+    "verificationState": "bridge",
+    "verificationStateLabel": "Bridge source"
   },
   {
     "id": "vmware-2014",
@@ -57,7 +69,11 @@
     "evidenceLabel": "Primary source",
     "year": "2014",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "ecosystem proof",
+    "claimScopeLabel": "Ecosystem proof",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "hitachi-2014",
@@ -72,7 +88,11 @@
     "evidenceLabel": "Primary source",
     "year": "2014",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "ecosystem proof",
+    "claimScopeLabel": "Ecosystem proof",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "hp-2015",
@@ -87,7 +107,11 @@
     "evidenceLabel": "Primary source",
     "year": "2015",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "ecosystem proof",
+    "claimScopeLabel": "Ecosystem proof",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "thales-2015",
@@ -102,7 +126,11 @@
     "evidenceLabel": "Primary source",
     "year": "2015",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "ecosystem proof",
+    "claimScopeLabel": "Ecosystem proof",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "hpe-2015",
@@ -117,7 +145,11 @@
     "evidenceLabel": "Primary source",
     "year": "2015",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "ecosystem proof",
+    "claimScopeLabel": "Ecosystem proof",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "ibm-2017",
@@ -132,7 +164,11 @@
     "evidenceLabel": "Primary source",
     "year": "2017",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "ecosystem proof",
+    "claimScopeLabel": "Ecosystem proof",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "vmware-aws-2018",
@@ -147,7 +183,11 @@
     "evidenceLabel": "Primary source",
     "year": "2018",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "ecosystem proof",
+    "claimScopeLabel": "Ecosystem proof",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "azure-2019",
@@ -162,7 +202,11 @@
     "evidenceLabel": "Primary source",
     "year": "2019",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "ecosystem proof",
+    "claimScopeLabel": "Ecosystem proof",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "ncipher-2019",
@@ -177,7 +221,11 @@
     "evidenceLabel": "Primary source",
     "year": "2019",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "ecosystem proof",
+    "claimScopeLabel": "Ecosystem proof",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "futurex-2020",
@@ -192,7 +240,11 @@
     "evidenceLabel": "Primary source",
     "year": "2020",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "ecosystem proof",
+    "claimScopeLabel": "Ecosystem proof",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "nvidia-2023",
@@ -207,7 +259,11 @@
     "evidenceLabel": "Primary source",
     "year": "2023",
     "directnessLabel": "Direct company blog URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "ai-era positioning",
+    "claimScopeLabel": "AI-era positioning",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "utimaco-2025",
@@ -222,7 +278,11 @@
     "evidenceLabel": "Primary source",
     "year": "2025",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "ai-era positioning",
+    "claimScopeLabel": "AI-era positioning",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "bloombase-about",
@@ -237,7 +297,11 @@
     "evidenceLabel": "Primary source",
     "year": "2026",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "company identity",
+    "claimScopeLabel": "Company identity",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "bloombase-offices",
@@ -252,7 +316,11 @@
     "evidenceLabel": "Primary source",
     "year": "2026",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "geographic footprint",
+    "claimScopeLabel": "Geographic footprint",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "bloombase-news-index",
@@ -267,7 +335,11 @@
     "evidenceLabel": "Primary source",
     "year": "2026",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "chronology ledger",
+    "claimScopeLabel": "Chronology ledger",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "openstack-2013",
@@ -282,7 +354,11 @@
     "evidenceLabel": "Primary source",
     "year": "2013",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "ecosystem proof",
+    "claimScopeLabel": "Ecosystem proof",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "emc-2013",
@@ -297,7 +373,11 @@
     "evidenceLabel": "Primary source",
     "year": "2013",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "ecosystem proof",
+    "claimScopeLabel": "Ecosystem proof",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   },
   {
     "id": "vmware-2013",
@@ -312,6 +392,10 @@
     "evidenceLabel": "Primary source",
     "year": "2013",
     "directnessLabel": "Direct company URL",
-    "artifactReadinessLabel": "Primary artifact ready"
+    "artifactReadinessLabel": "Primary artifact ready",
+    "claimScope": "ecosystem proof",
+    "claimScopeLabel": "Ecosystem proof",
+    "verificationState": "direct",
+    "verificationStateLabel": "Direct claim support"
   }
 ]

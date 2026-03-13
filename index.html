@@ -1406,7 +1406,8 @@
       color: #6f532f;
     }
     .source-pill-meta[data-tone="third-party"],
-    .source-pill-meta[data-tone="context"] {
+    .source-pill-meta[data-tone="context"],
+    .source-pill-meta[data-tone="bridge"] {
       background: rgba(45,95,115,.09);
       color: #214c5e;
     }
@@ -1414,6 +1415,10 @@
     .source-pill-meta[data-tone="working"] {
       background: rgba(25,50,79,.06);
       color: var(--accent);
+    }
+    .source-pill-meta[data-tone="direct"] {
+      background: rgba(180,138,90,.12);
+      color: #6f532f;
     }
     .source-item strong { display: block; margin-bottom: 6px; }
     .source-item p { margin: 0; color: var(--muted); line-height: 1.65; }
@@ -1604,12 +1609,13 @@
           <div class="section-label">Source explorer</div>
           <div class="source-explorer-header">
             <div>
-              <h3>Browse the evidence by chapter, source origin, and proof posture</h3>
-              <p>The archive below is now organized like an editorial evidence desk: readers can isolate first-party material, see which chapters each document supports, and distinguish strong primary proof from connective context or working synthesis.</p>
+              <h3>Browse the evidence by chapter, source origin, proof posture, and verification state</h3>
+              <p>The archive below is organized like an editorial evidence desk: readers can isolate first-party material, see which chapters each document supports, and distinguish direct claim support from bridge material or working synthesis.</p>
             </div>
             <div class="source-controls">
               <div class="source-filter-group" id="sourceOriginFilters"></div>
               <div class="source-filter-group" id="sourceEvidenceFilters"></div>
+              <div class="source-filter-group" id="sourceVerificationFilters"></div>
               <div class="source-filter-group" id="sourceChapterFilters"></div>
             </div>
           </div>
@@ -1949,14 +1955,16 @@
     function renderSourceSummary(sources) {
       const root = document.getElementById('sourceSummary');
       const total = sources.length;
-      const primary = sources.filter((source) => source.publisherType === 'first-party').length;
-      const directUrls = sources.filter((source) => (source.directnessLabel || '').toLowerCase().includes('direct')).length;
+      const directSupport = sources.filter((source) => source.verificationState === 'direct').length;
+      const bridgeSources = sources.filter((source) => source.verificationState === 'bridge').length;
+      const workingOnly = sources.filter((source) => source.verificationState === 'working').length;
       const artifactReady = sources.filter((source) => (source.artifactReadinessLabel || '').toLowerCase().includes('ready')).length;
 
       [
-        [String(total), 'Tracked sources across the chronicle, from working synthesis to direct releases.'],
-        [String(primary), 'First-party sources that directly support the strongest validation and AI-era chapters.'],
-        [String(directUrls), 'Sources with direct public URLs rather than only internal research synthesis.'],
+        [String(total), 'Tracked sources across the chronicle, spanning direct proof, bridge material, and working synthesis.'],
+        [String(directSupport), 'Sources that directly verify a claim on their own URL rather than merely helping the story cohere.'],
+        [String(bridgeSources), 'Useful connective sources that carry biography or context, but still should not be mistaken for direct institutional proof.'],
+        [String(workingOnly), 'Internal research scaffolding that keeps uncertain chapters visible without pretending they are fully confirmed.'],
         [String(artifactReady), 'Sources strong enough to support richer artifact treatment without feeling fake.']
       ].forEach(([value, text]) => {
         const card = make('div', 'source-summary-card');
@@ -2178,12 +2186,13 @@
       const root = document.getElementById('sourcesList');
       const originRoot = document.getElementById('sourceOriginFilters');
       const evidenceRoot = document.getElementById('sourceEvidenceFilters');
+      const verificationRoot = document.getElementById('sourceVerificationFilters');
       const chapterRoot = document.getElementById('sourceChapterFilters');
       const activeRoot = document.getElementById('sourceActiveState');
       if (!root) return;
 
       const supportMap = buildSourceSupportMap(sources, chapters, eventsByChapterId, artifactsByChapterId);
-      const filters = { origin: 'all', evidence: 'all', chapter: 'all' };
+      const filters = { origin: 'all', evidence: 'all', verification: 'all', chapter: 'all' };
       const filterSets = [
         {
           root: originRoot,
@@ -2196,6 +2205,12 @@
           label: 'Proof posture',
           key: 'evidence',
           options: [['all', 'All evidence'], ['primary', 'Primary'], ['context', 'Context'], ['working', 'Working']]
+        },
+        {
+          root: verificationRoot,
+          label: 'Verification state',
+          key: 'verification',
+          options: [['all', 'All states'], ['direct', 'Direct support'], ['bridge', 'Bridge source'], ['working', 'Working synthesis']]
         },
         {
           root: chapterRoot,
@@ -2220,6 +2235,7 @@
         const items = [];
         if (filters.origin !== 'all') items.push(`Origin: ${filters.origin.replace('-', ' ')}`);
         if (filters.evidence !== 'all') items.push(`Proof: ${filters.evidence}`);
+        if (filters.verification !== 'all') items.push(`Verification: ${filters.verification.replace('-', ' ')}`);
         if (filters.chapter !== 'all') items.push(`Chapter: ${chaptersById.get(filters.chapter)?.phase || filters.chapter}`);
         items.forEach((label) => activeRoot.append(make('span', 'source-active-chip', label)));
       }
@@ -2233,8 +2249,9 @@
           const support = supportMap.get(source.id);
           const matchesOrigin = filters.origin === 'all' || source.publisherType === filters.origin;
           const matchesEvidence = filters.evidence === 'all' || sourceTone === filters.evidence;
+          const matchesVerification = filters.verification === 'all' || (source.verificationState || 'working') === filters.verification;
           const matchesChapter = filters.chapter === 'all' || support?.chapterIds?.has(filters.chapter);
-          return matchesOrigin && matchesEvidence && matchesChapter;
+          return matchesOrigin && matchesEvidence && matchesVerification && matchesChapter;
         });
 
         if (!filtered.length) {
@@ -2251,7 +2268,9 @@
           [
             [source.publisherLabel, source.publisherType],
             [source.categoryLabel, source.category],
+            [source.claimScopeLabel, source.verificationState === 'direct' ? 'primary' : source.verificationState],
             [source.evidenceLabel, source.evidenceLevel],
+            [source.verificationStateLabel, source.verificationState],
             [source.directnessLabel, source.publisherType === 'first-party' ? 'primary' : 'context'],
             [source.artifactReadinessLabel, source.publisherType === 'internal' ? 'working' : source.evidenceLevel],
             [source.year, 'year']
@@ -2271,7 +2290,10 @@
           if (support.chapters.length) coverageBits.push(`${support.chapters.length} chapter${support.chapters.length === 1 ? '' : 's'}`);
           if (support.eventCount) coverageBits.push(`${support.eventCount} archive event${support.eventCount === 1 ? '' : 's'}`);
           if (support.artifactCount) coverageBits.push(`${support.artifactCount} artifact${support.artifactCount === 1 ? '' : 's'}`);
-          supportBox.append(make('div', 'source-support-title', coverageBits.length ? `Supports ${coverageBits.join(' / ')}` : 'Support coverage still being mapped'));
+          const supportLabel = coverageBits.length
+            ? `Verifies ${source.claimScopeLabel || 'supporting evidence'} · supports ${coverageBits.join(' / ')}`
+            : `Verifies ${source.claimScopeLabel || 'supporting evidence'} · support coverage still being mapped`;
+          supportBox.append(make('div', 'source-support-title', supportLabel));
 
           if (support.chapters.length) {
             const row = make('div', 'source-support-row');
