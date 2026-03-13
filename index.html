@@ -2359,6 +2359,13 @@
       return supportMap;
     }
 
+    function announceChapterFocus(chapterId, detail = {}) {
+      if (!chapterId) return;
+      window.dispatchEvent(new CustomEvent('chronicle:focus-chapter', {
+        detail: { chapterId, ...detail }
+      }));
+    }
+
     function renderSources(sources, chapters, chaptersById, eventsByChapterId, artifactsByChapterId) {
       const root = document.getElementById('sourcesList');
       const originRoot = document.getElementById('sourceOriginFilters');
@@ -2482,6 +2489,7 @@
                 filters.chapter = chapter.id;
                 syncFilterButtons();
                 draw();
+                announceChapterFocus(chapter.id, { sourceId: source.id, scrollSources: true });
               });
               row.append(button);
             });
@@ -2522,6 +2530,17 @@
           });
           root.append(button);
         });
+      });
+
+      window.addEventListener('chronicle:focus-chapter', (event) => {
+        const chapterId = event.detail?.chapterId;
+        if (!chapterId || !chaptersById.has(chapterId)) return;
+        filters.chapter = chapterId;
+        syncFilterButtons();
+        draw();
+        if (event.detail?.scrollSources) {
+          document.getElementById('sources')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       });
 
       draw();
@@ -2574,6 +2593,7 @@
 
         button.append(visual, body);
         button.addEventListener('click', () => {
+          announceChapterFocus(chapter.id, { scrollArchive: true });
           document.getElementById(chapter.id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
         root.append(button);
@@ -2724,12 +2744,14 @@
         syncArchiveScopeUi();
       }
 
-      function openArchiveScope(chapterId, eventId) {
+      function openArchiveScope(chapterId, eventId, options = {}) {
         if (chapterId) {
           filters.chapterId = chapterId;
           applyArchiveFilters();
         }
-        document.getElementById('archiveTimeline')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (options.scroll !== false) {
+          document.getElementById('archiveTimeline')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
         if (eventId) {
           window.setTimeout(() => focusArchiveEvent(eventId), 120);
         }
@@ -2824,6 +2846,11 @@
           if (event.chapterId) {
             const chapterLink = make('a', 'timeline-chapter-link', 'Return to chapter');
             chapterLink.href = `#${event.chapterId}`;
+            chapterLink.addEventListener('click', (clickEvent) => {
+              clickEvent.preventDefault();
+              announceChapterFocus(event.chapterId, { eventId: event.id });
+              document.getElementById(event.chapterId)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
             card.append(chapterLink);
           }
 
@@ -2832,6 +2859,12 @@
 
         row.append(stack);
         timelineRoot.append(row);
+      });
+
+      window.addEventListener('chronicle:focus-chapter', (event) => {
+        const chapterId = event.detail?.chapterId;
+        if (!chapterId || !chaptersById.has(chapterId)) return;
+        openArchiveScope(chapterId, event.detail?.eventId, { scroll: event.detail?.scrollArchive !== false });
       });
 
       applyArchiveFilters();
