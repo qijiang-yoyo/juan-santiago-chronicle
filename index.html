@@ -170,6 +170,33 @@
     .proof-list li {
       padding: 12px 14px; border-radius: 16px; background: rgba(25,50,79,.05); border: 1px solid rgba(25,50,79,.08); color: var(--ink); line-height: 1.6;
     }
+    .evidence-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .evidence-chip {
+      padding: 14px 14px 13px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.74);
+      border: 1px solid rgba(25,50,79,.08);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.4);
+    }
+    .evidence-chip strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--soft);
+    }
+    .evidence-chip span {
+      display: block;
+      color: var(--ink);
+      line-height: 1.58;
+      font-size: 13px;
+    }
     .artifact-stack {
       display: grid;
       gap: 14px;
@@ -200,6 +227,60 @@
       margin: 0;
       color: var(--muted);
       line-height: 1.72;
+    }
+    .artifact-visual {
+      position: relative;
+      display: grid;
+      gap: 10px;
+      min-height: 156px;
+      margin-bottom: 16px;
+      padding: 18px;
+      border-radius: 18px;
+      overflow: hidden;
+      background: linear-gradient(145deg, rgba(25,50,79,.94), rgba(45,95,115,.88));
+      color: #f7f3ec;
+      isolation: isolate;
+    }
+    .artifact-visual::before {
+      content: "";
+      position: absolute;
+      inset: auto -8% -30% 35%;
+      height: 140px;
+      background: radial-gradient(circle, rgba(180,138,90,.35), rgba(180,138,90,0));
+      pointer-events: none;
+      z-index: -1;
+    }
+    .artifact-visual[data-mode="document"] {
+      background: linear-gradient(145deg, rgba(33,50,74,.96), rgba(72,86,115,.88));
+    }
+    .artifact-visual-label {
+      font-size: 10px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(247,243,236,.72);
+    }
+    .artifact-visual-quote {
+      font-family: Georgia, serif;
+      font-size: 23px;
+      line-height: 1.35;
+      letter-spacing: -.02em;
+      max-width: 18ch;
+    }
+    .artifact-visual-doc {
+      display: grid;
+      gap: 10px;
+      max-width: 28ch;
+    }
+    .artifact-visual-doc strong {
+      font-family: Georgia, serif;
+      font-size: 24px;
+      line-height: 1.2;
+      letter-spacing: -.03em;
+    }
+    .artifact-visual-doc span {
+      color: rgba(247,243,236,.8);
+      line-height: 1.6;
+      font-size: 14px;
     }
     .artifact-meta {
       display: flex;
@@ -876,6 +957,32 @@
     }
 
     .sources-wrap { margin-top: 34px; }
+    .source-summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .source-summary-card {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.7);
+      border: 1px solid rgba(25,50,79,.08);
+    }
+    .source-summary-card strong {
+      display: block;
+      margin-bottom: 6px;
+      font-family: Georgia, serif;
+      font-size: 28px;
+      line-height: 1;
+      color: var(--accent);
+    }
+    .source-summary-card span {
+      display: block;
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 13px;
+    }
     .sources-list { display: grid; gap: 12px; margin-top: 18px; }
     .source-item {
       display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: start;
@@ -939,6 +1046,7 @@
       .chapter { padding-left: 28px; }
       .chapter::before { left: 12px; }
       .thesis-grid { grid-template-columns: 1fr; }
+      .evidence-strip, .source-summary { grid-template-columns: 1fr; }
       .source-item { grid-template-columns: 1fr; }
       .archive-timeline::before { left: 24px; }
       .timeline-event { grid-template-columns: 1fr; gap: 8px; }
@@ -1096,6 +1204,7 @@
         <p class="intro-copy">
           The source archive is not decorative. It is what moves the page away from tribute aesthetics and toward museum-style credibility. Some early-life details remain intentionally restrained because the public record still needs stronger confirmation.
         </p>
+        <div class="source-summary" id="sourceSummary"></div>
         <div class="sources-list" id="sourcesList"></div>
         <p class="footer-note">Next upgrade path: capture stronger direct primary sources for the earliest formation chapter, then add media artifacts only where the sourcing is strong enough to carry them.</p>
       </article>
@@ -1130,6 +1239,46 @@
       });
     }
 
+    function artifactPrimaryLine(source) {
+      if (!source) return 'Working artifact context';
+      const bits = [source.publisherLabel, source.evidenceLabel, source.directnessLabel].filter(Boolean);
+      return bits.join(' · ');
+    }
+
+    function renderArtifactVisual(artifact, source) {
+      const visual = make('div', 'artifact-visual');
+      visual.dataset.mode = artifact.displayMode || 'document';
+      visual.append(make('div', 'artifact-visual-label', artifact.mediaLabel || 'Source artifact'));
+
+      if ((artifact.displayMode || 'document') === 'quote') {
+        visual.append(make('div', 'artifact-visual-quote', `“${artifact.title}”`));
+        visual.append(make('div', '', artifactPrimaryLine(source)));
+        return visual;
+      }
+
+      const doc = make('div', 'artifact-visual-doc');
+      doc.append(make('strong', '', artifact.title));
+      doc.append(make('span', '', artifact.supportLabel || artifactPrimaryLine(source)));
+      visual.append(doc);
+      return visual;
+    }
+
+    function renderEvidenceProfile(chapter) {
+      if (!chapter.evidenceProfile) return null;
+      const strip = make('div', 'evidence-strip');
+      [
+        [chapter.evidenceProfile.stanceLabel, chapter.evidenceProfile.stance],
+        [chapter.evidenceProfile.strengthLabel, chapter.evidenceProfile.strength],
+        [chapter.evidenceProfile.artifactLabel, chapter.evidenceProfile.artifact]
+      ].forEach(([label, value]) => {
+        const item = make('div', 'evidence-chip');
+        item.append(make('strong', '', label));
+        item.append(make('span', '', value));
+        strip.append(item);
+      });
+      return strip;
+    }
+
     function renderChapters(chapters, sourcesById, artifactsByChapterId, taxonomyById, eventsByChapterId, openArchiveScope) {
       const root = document.getElementById('chapters');
       chapters.forEach((chapter) => {
@@ -1154,6 +1303,9 @@
         });
         article.append(proofList);
 
+        const evidenceProfile = renderEvidenceProfile(chapter);
+        if (evidenceProfile) article.append(evidenceProfile);
+
         const artifacts = artifactsByChapterId.get(chapter.id) || [];
         if (artifacts.length) {
           const artifactStack = make('div', 'artifact-stack');
@@ -1161,6 +1313,7 @@
             const source = sourcesById.get(artifact.sourceId);
             const taxonomy = taxonomyById.get(artifact.type);
             const card = make('section', 'artifact-card');
+            card.append(renderArtifactVisual(artifact, source));
             card.append(make('div', 'artifact-eyebrow', artifact.eyebrow));
             card.append(make('h4', '', artifact.title));
             card.append(make('p', '', artifact.excerpt));
@@ -1291,6 +1444,26 @@
       root.append(left, right);
     }
 
+    function renderSourceSummary(sources) {
+      const root = document.getElementById('sourceSummary');
+      const total = sources.length;
+      const primary = sources.filter((source) => source.publisherType === 'first-party').length;
+      const directUrls = sources.filter((source) => (source.directnessLabel || '').toLowerCase().includes('direct')).length;
+      const artifactReady = sources.filter((source) => (source.artifactReadinessLabel || '').toLowerCase().includes('ready')).length;
+
+      [
+        [String(total), 'Tracked sources across the chronicle, from working synthesis to direct releases.'],
+        [String(primary), 'First-party sources that directly support the strongest validation and AI-era chapters.'],
+        [String(directUrls), 'Sources with direct public URLs rather than only internal research synthesis.'],
+        [String(artifactReady), 'Sources strong enough to support richer artifact treatment without feeling fake.']
+      ].forEach(([value, text]) => {
+        const card = make('div', 'source-summary-card');
+        card.append(make('strong', '', value));
+        card.append(make('span', '', text));
+        root.append(card);
+      });
+    }
+
     function renderSources(sources) {
       const root = document.getElementById('sourcesList');
       sources.forEach((source) => {
@@ -1302,6 +1475,8 @@
           [source.publisherLabel, source.publisherType],
           [source.categoryLabel, source.category],
           [source.evidenceLabel, source.evidenceLevel],
+          [source.directnessLabel, source.publisherType === 'first-party' ? 'primary' : 'context'],
+          [source.artifactReadinessLabel, source.publisherType === 'internal' ? 'working' : source.evidenceLevel],
           [source.year, 'year']
         ].forEach(([label, tone]) => {
           if (!label) return;
@@ -1884,6 +2059,7 @@
       const setActiveLocation = initializeMap(locations, chapters);
       renderValidation(validationGroups);
       renderPresentDirection(presentDirection, sourcesById);
+      renderSourceSummary(sources);
       renderSources(sources);
       activateScrollSync(chapters, setActiveLocation);
     }

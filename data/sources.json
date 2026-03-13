@@ -10,7 +10,9 @@
     "publisherLabel": "In-repo synthesis",
     "evidenceLevel": "working",
     "evidenceLabel": "Working synthesis",
-    "year": "2026"
+    "year": "2026",
+    "directnessLabel": "Derived synthesis",
+    "artifactReadinessLabel": "Working only"
   },
   {
     "id": "timeline-v2",
@@ -23,7 +25,9 @@
     "publisherLabel": "In-repo chronology",
     "evidenceLevel": "working",
     "evidenceLabel": "Working synthesis",
-    "year": "2026"
+    "year": "2026",
+    "directnessLabel": "Derived synthesis",
+    "artifactReadinessLabel": "Working only"
   },
   {
     "id": "launch-academy",
@@ -36,7 +40,9 @@
     "publisherLabel": "Third-party profile",
     "evidenceLevel": "context",
     "evidenceLabel": "Context source",
-    "year": "2018"
+    "year": "2018",
+    "directnessLabel": "Profile feature",
+    "artifactReadinessLabel": "Context artifact ready"
   },
   {
     "id": "vmware-2014",
@@ -49,7 +55,9 @@
     "publisherLabel": "Bloombase release",
     "evidenceLevel": "primary",
     "evidenceLabel": "Primary source",
-    "year": "2014"
+    "year": "2014",
+    "directnessLabel": "Direct company URL",
+    "artifactReadinessLabel": "Primary artifact ready"
   },
   {
     "id": "hitachi-2014",
@@ -62,7 +70,9 @@
     "publisherLabel": "Bloombase release",
     "evidenceLevel": "primary",
     "evidenceLabel": "Primary source",
-    "year": "2014"
+    "year": "2014",
+    "directnessLabel": "Direct company URL",
+    "artifactReadinessLabel": "Primary artifact ready"
   },
   {
     "id": "hp-2015",
@@ -75,7 +85,9 @@
     "publisherLabel": "Bloombase release",
     "evidenceLevel": "primary",
     "evidenceLabel": "Primary source",
-    "year": "2015"
+    "year": "2015",
+    "directnessLabel": "Direct company URL",
+    "artifactReadinessLabel": "Primary artifact ready"
   },
   {
     "id": "thales-2015",
@@ -88,7 +100,9 @@
     "publisherLabel": "Bloombase release",
     "evidenceLevel": "primary",
     "evidenceLabel": "Primary source",
-    "year": "2015"
+    "year": "2015",
+    "directnessLabel": "Direct company URL",
+    "artifactReadinessLabel": "Primary artifact ready"
   },
   {
     "id": "hpe-2015",
@@ -101,7 +115,9 @@
     "publisherLabel": "Bloombase release",
     "evidenceLevel": "primary",
     "evidenceLabel": "Primary source",
-    "year": "2015"
+    "year": "2015",
+    "directnessLabel": "Direct company URL",
+    "artifactReadinessLabel": "Primary artifact ready"
   },
   {
     "id": "ibm-2017",
@@ -114,7 +130,9 @@
     "publisherLabel": "Bloombase release",
     "evidenceLevel": "primary",
     "evidenceLabel": "Primary source",
-    "year": "2017"
+    "year": "2017",
+    "directnessLabel": "Direct company URL",
+    "artifactReadinessLabel": "Primary artifact ready"
   },
   {
     "id": "vmware-aws-2018",
@@ -127,7 +145,9 @@
     "publisherLabel": "Bloombase release",
     "evidenceLevel": "primary",
     "evidenceLabel": "Primary source",
-    "year": "2018"
+    "year": "2018",
+    "directnessLabel": "Direct company URL",
+    "artifactReadinessLabel": "Primary artifact ready"
   },
   {
     "id": "azure-2019",
@@ -140,7 +160,9 @@
     "publisherLabel": "Bloombase release",
     "evidenceLevel": "primary",
     "evidenceLabel": "Primary source",
-    "year": "2019"
+    "year": "2019",
+    "directnessLabel": "Direct company URL",
+    "artifactReadinessLabel": "Primary artifact ready"
   },
   {
     "id": "ncipher-2019",
@@ -153,7 +175,9 @@
     "publisherLabel": "Bloombase release",
     "evidenceLevel": "primary",
     "evidenceLabel": "Primary source",
-    "year": "2019"
+    "year": "2019",
+    "directnessLabel": "Direct company URL",
+    "artifactReadinessLabel": "Primary artifact ready"
   },
   {
     "id": "futurex-2020",
@@ -166,7 +190,9 @@
     "publisherLabel": "Bloombase release",
     "evidenceLevel": "primary",
     "evidenceLabel": "Primary source",
-    "year": "2020"
+    "year": "2020",
+    "directnessLabel": "Direct company URL",
+    "artifactReadinessLabel": "Primary artifact ready"
   },
   {
     "id": "nvidia-2023",
@@ -179,7 +205,9 @@
     "publisherLabel": "Bloombase blog",
     "evidenceLevel": "primary",
     "evidenceLabel": "Primary source",
-    "year": "2023"
+    "year": "2023",
+    "directnessLabel": "Direct company blog URL",
+    "artifactReadinessLabel": "Primary artifact ready"
   },
   {
     "id": "utimaco-2025",
@@ -192,6 +220,8 @@
     "publisherLabel": "Bloombase release",
     "evidenceLevel": "primary",
     "evidenceLabel": "Primary source",
-    "year": "2025"
+    "year": "2025",
+    "directnessLabel": "Direct company URL",
+    "artifactReadinessLabel": "Primary artifact ready"
   }
 ]
