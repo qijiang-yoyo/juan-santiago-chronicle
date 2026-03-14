@@ -1346,6 +1346,113 @@
       margin-top: 18px;
       margin-bottom: 18px;
     }
+    .source-dossier-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .source-dossier-card {
+      padding: 18px;
+      border-radius: 20px;
+      border: 1px solid rgba(25,50,79,.08);
+      background: linear-gradient(180deg, rgba(255,255,255,.84), rgba(246,243,237,.72));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.45);
+      display: grid;
+      gap: 12px;
+    }
+    .source-dossier-topline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .source-dossier-card h4 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.3;
+      color: var(--ink);
+    }
+    .source-dossier-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.68;
+    }
+    .source-dossier-meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .source-dossier-stat {
+      padding: 12px;
+      border-radius: 16px;
+      border: 1px solid rgba(25,50,79,.08);
+      background: rgba(255,255,255,.72);
+    }
+    .source-dossier-stat strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--soft);
+    }
+    .source-dossier-stat span {
+      display: block;
+      color: var(--ink);
+      line-height: 1.55;
+      font-size: 13px;
+    }
+    .source-dossier-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .source-dossier-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(25,50,79,.08);
+      background: rgba(255,255,255,.72);
+      color: var(--accent);
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .source-dossier-chip[data-tone="primary"] {
+      background: rgba(215,233,239,.82);
+      color: #20475d;
+    }
+    .source-dossier-chip[data-tone="context"] {
+      background: rgba(243,232,216,.88);
+      color: #6f532f;
+    }
+    .source-dossier-chip[data-tone="working"] {
+      background: rgba(231,228,244,.84);
+      color: #5d5680;
+    }
+    .source-dossier-chip[data-tone="open"] {
+      background: rgba(250,239,226,.92);
+      color: #8c6030;
+    }
+    .source-dossier-action {
+      justify-self: start;
+      border: 0;
+      border-radius: 999px;
+      padding: 11px 16px;
+      background: var(--accent);
+      color: #f6f1e7;
+      font-size: 12px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .source-dossier-action:hover {
+      background: #18344d;
+    }
     .source-explorer-header {
       display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(320px, .92fr);
@@ -1606,7 +1713,7 @@
       .phase-rail ol { grid-template-columns: repeat(3, minmax(0,1fr)); }
       .archive-controls { justify-items: start; }
       .archive-filter-group { justify-content: flex-start; }
-      .audit-row, .roadmap-grid { grid-template-columns: 1fr; }
+      .audit-row, .roadmap-grid, .source-dossier-meta { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 700px) {
@@ -1616,7 +1723,7 @@
       .chapter { padding-left: 28px; }
       .chapter::before { left: 12px; }
       .thesis-grid { grid-template-columns: 1fr; }
-      .evidence-strip, .source-summary { grid-template-columns: 1fr; }
+      .evidence-strip, .source-summary, .source-dossier-grid { grid-template-columns: 1fr; }
       .source-item { grid-template-columns: 1fr; }
       .source-support-row, .source-filter-group, .source-active-state { align-items: flex-start; }
       .archive-timeline::before { left: 24px; }
@@ -1802,6 +1909,7 @@
             </div>
           </div>
           <div class="source-active-state" id="sourceActiveState"></div>
+          <div class="source-dossier-grid" id="sourceDossiers"></div>
         </section>
         <div class="evidence-audit" id="evidenceAudit">
           <section class="audit-card">
@@ -2530,6 +2638,120 @@
       if (source.publisherType === 'first-party') return 'primary';
       if (source.publisherType === 'third-party') return 'context';
       return 'working';
+    }
+
+    function renderSourceDossiers(chapters, sourcesById, eventsByChapterId, artifactsByChapterId, roadmap = []) {
+      const root = document.getElementById('sourceDossiers');
+      if (!root) return;
+
+      const roadmapByChapter = new Map();
+      roadmap.forEach((entry) => {
+        if (!roadmapByChapter.has(entry.chapterId)) roadmapByChapter.set(entry.chapterId, []);
+        roadmapByChapter.get(entry.chapterId).push(entry);
+      });
+
+      const chapterCards = new Map();
+
+      function draw(activeChapterId = null) {
+        root.innerHTML = '';
+
+        chapters.forEach((chapter) => {
+          const chapterSources = [...new Set(chapter.sources || [])]
+            .map((sourceId) => sourcesById.get(sourceId))
+            .filter(Boolean);
+          const eventCount = (eventsByChapterId.get(chapter.id) || []).length;
+          const artifactCount = (artifactsByChapterId.get(chapter.id) || []).length;
+          const directSources = chapterSources.filter((source) => source.verificationState === 'direct');
+          const bridgeSources = chapterSources.filter((source) => source.verificationState === 'bridge');
+          const workingSources = chapterSources.filter((source) => source.verificationState === 'working');
+          const strongestSource = directSources[0] || bridgeSources[0] || chapterSources[0] || null;
+          const chapterRoadmap = roadmapByChapter.get(chapter.id) || [];
+
+          const card = make('article', 'source-dossier-card');
+          if (activeChapterId && activeChapterId === chapter.id) {
+            card.style.boxShadow = '0 0 0 1px rgba(32,71,93,.12), inset 0 1px 0 rgba(255,255,255,.45)';
+            card.style.borderColor = 'rgba(32,71,93,.18)';
+          }
+
+          const topline = make('div', 'source-dossier-topline');
+          const phase = make('span', 'source-dossier-chip', `${chapter.phase} · ${chapter.range}`);
+          phase.dataset.tone = chapterTone(chapter) === 'ai-era' ? 'primary' : chapterTone(chapter) === 'validation' ? 'context' : 'working';
+          topline.append(phase);
+
+          const evidence = make('span', 'source-dossier-chip', chapter.evidenceProfile?.stance || 'Evidence stance forming');
+          evidence.dataset.tone = directSources.length ? 'primary' : bridgeSources.length ? 'context' : 'working';
+          topline.append(evidence);
+
+          if (chapterRoadmap.length) {
+            const gap = make('span', 'source-dossier-chip', `${chapterRoadmap.length} open capture target${chapterRoadmap.length === 1 ? '' : 's'}`);
+            gap.dataset.tone = 'open';
+            topline.append(gap);
+          }
+
+          card.append(topline);
+          card.append(make('h4', '', chapter.title));
+          card.append(make('p', '', chapter.dek));
+
+          const meta = make('div', 'source-dossier-meta');
+          [
+            ['Source mix', `${directSources.length} direct · ${bridgeSources.length} bridge · ${workingSources.length} working`],
+            ['Archive density', `${eventCount} timeline event${eventCount === 1 ? '' : 's'} · ${artifactCount} artifact${artifactCount === 1 ? '' : 's'}`],
+            ['Strongest anchor', strongestSource ? strongestSource.label : 'Still relying on working synthesis']
+          ].forEach(([label, text]) => {
+            const stat = make('div', 'source-dossier-stat');
+            stat.append(make('strong', '', label));
+            stat.append(make('span', '', text));
+            meta.append(stat);
+          });
+          card.append(meta);
+
+          const sourceRow = make('div', 'source-dossier-row');
+          chapterSources.slice(0, 3).forEach((source) => {
+            const link = make('a', 'source-dossier-chip', source.label);
+            link.href = source.url;
+            link.target = source.url.startsWith('http') ? '_blank' : '_self';
+            if (link.target === '_blank') link.rel = 'noreferrer';
+            link.dataset.tone = sourceSupportTone(source);
+            sourceRow.append(link);
+          });
+          if (strongestSource && chapterSources.length > 3) {
+            const more = make('span', 'source-dossier-chip', `+${chapterSources.length - 3} more anchors`);
+            more.dataset.tone = 'working';
+            sourceRow.append(more);
+          }
+          if (sourceRow.childNodes.length) card.append(sourceRow);
+
+          if (chapterRoadmap.length) {
+            const roadmapRow = make('div', 'source-dossier-row');
+            chapterRoadmap.slice(0, 2).forEach((entry) => {
+              const pill = make('button', 'source-dossier-chip', entry.title);
+              pill.type = 'button';
+              pill.dataset.tone = roadmapTone(entry);
+              pill.addEventListener('click', () => {
+                document.getElementById(`roadmap-${entry.id}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              });
+              roadmapRow.append(pill);
+            });
+            card.append(roadmapRow);
+          }
+
+          const action = make('button', 'source-dossier-action', 'Focus chapter evidence');
+          action.type = 'button';
+          action.addEventListener('click', () => {
+            announceChapterFocus(chapter.id, { scrollSources: true });
+          });
+          card.append(action);
+
+          chapterCards.set(chapter.id, card);
+          root.append(card);
+        });
+      }
+
+      window.addEventListener('chronicle:focus-chapter', (event) => {
+        draw(event.detail?.chapterId || null);
+      });
+
+      draw();
     }
 
     function buildSourceSupportMap(sources, chapters, eventsByChapterId, artifactsByChapterId) {
@@ -3410,6 +3632,7 @@
       renderPresentDirection(presentDirection, sourcesById);
       renderSourceSummary(sources);
       renderEvidenceAudit(chapters, sourcesById, eventsByChapterId, artifactsByChapterId);
+      renderSourceDossiers(chapters, sourcesById, eventsByChapterId, artifactsByChapterId, sourceRoadmap);
       renderSourceRoadmap(sourceRoadmap, chaptersById, sourcesById);
       renderSources(sources, chapters, chaptersById, eventsByChapterId, artifactsByChapterId, sourceRoadmap);
       activateScrollSync(chapters, setActiveLocation);
