@@ -44,6 +44,15 @@
         "sourceId": "emc-2013",
         "chapterId": "founding-bloombase",
         "tone": "primary"
+      },
+      {
+        "dateLabel": "Oct 8, 2014",
+        "title": "Gregory W. Slayton joins Bloombase Advisory Board",
+        "summary": "Useful because it shows the founder arc widening from product proof into strategic-growth language and international scaling ambition on a first-party company URL.",
+        "url": "https://www.bloombase.com/news_and_events/20141008-1.html",
+        "sourceId": "slayton-2014",
+        "chapterId": "founding-bloombase",
+        "tone": "primary"
       }
     ]
   },
@@ -57,7 +66,7 @@
         "label": "Main validation arc"
       },
       {
-        "value": "11+",
+        "value": "13+",
         "label": "Direct or partner-hosted milestones in the arc"
       },
       {
@@ -81,6 +90,15 @@
         "summary": "Deepens the key-custody and HSM thread that gives the middle years real infrastructure texture instead of a generic alliance wall.",
         "url": "https://www.bloombase.com/news_and_events/20160613-1.html",
         "sourceId": "ultra-2016",
+        "chapterId": "enterprise-validation",
+        "tone": "primary"
+      },
+      {
+        "dateLabel": "Aug 1, 2017",
+        "title": "Huawei OceanStor V3 interoperability certification",
+        "summary": "A direct Bloombase release that thickens 2017, showing the validation arc extending across unified storage systems in addition to IBM and ATTO.",
+        "url": "https://www.bloombase.com/news_and_events/20170801-1.html",
+        "sourceId": "huawei-2017",
         "chapterId": "enterprise-validation",
         "tone": "primary"
       },

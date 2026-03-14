@@ -7,84 +7,6 @@
   },
   "events": [
     {
-      "text": {
-        "headline": "Age 16 - USTC",
-        "text": "Entered the University of Science and Technology of China (working narrative; source verification pending)."
-      },
-      "sourceIds": [
-        "dossier",
-        "timeline-v2"
-      ],
-      "id": "age-16-ustc",
-      "chapterId": "early-acceleration",
-      "dateLabel": "Undated - claim still being tightened",
-      "undated": true,
-      "sortBucket": "formation"
-    },
-    {
-      "text": {
-        "headline": "Early Technical Formation",
-        "text": "Built the foundation for a long technical trajectory."
-      },
-      "sourceIds": [
-        "dossier",
-        "timeline-v2"
-      ],
-      "id": "early-technical-formation",
-      "chapterId": "early-acceleration",
-      "dateLabel": "Undated - opening frame",
-      "undated": true,
-      "sortBucket": "formation"
-    },
-    {
-      "text": {
-        "headline": "CUHK PhD",
-        "text": "Advanced training in Electrical and Electronic Engineering at The Chinese University of Hong Kong."
-      },
-      "sourceIds": [
-        "launch-academy",
-        "dossier"
-      ],
-      "id": "cuhk-phd",
-      "chapterId": "research-formation",
-      "dateLabel": "Undated graduate-era anchor",
-      "undated": true,
-      "sortBucket": "research"
-    },
-    {
-      "text": {
-        "headline": "Beckman Laser Institute / UC Irvine",
-        "text": "Research chapter in California before the founder arc."
-      },
-      "sourceIds": [
-        "launch-academy",
-        "dossier"
-      ],
-      "id": "beckman-uc-irvine",
-      "chapterId": "california-transition",
-      "dateLabel": "Undated California bridge",
-      "undated": true,
-      "sortBucket": "research"
-    },
-    {
-      "text": {
-        "headline": "Bloombase founding chapter becomes publicly visible",
-        "text": "The exact founding-day record remains thin, but direct Bloombase company pages and the 2013 OpenStack / EMC / VMware release trail make the earliest public company narrative materially stronger."
-      },
-      "sourceIds": [
-        "bloombase-about",
-        "bloombase-offices",
-        "bloombase-news-index",
-        "dossier",
-        "timeline-v2"
-      ],
-      "id": "bloombase-founded",
-      "chapterId": "founding-bloombase",
-      "dateLabel": "Pre-2013 public company frame",
-      "undated": true,
-      "sortBucket": "founding"
-    },
-    {
       "start_date": {
         "year": "2012",
         "month": "12",
@@ -163,6 +85,22 @@
       ],
       "id": "vmware-technology-alliance",
       "chapterId": "enterprise-validation"
+    },
+    {
+      "start_date": {
+        "year": "2014",
+        "month": "10",
+        "day": "8"
+      },
+      "text": {
+        "headline": "Bloombase adds Gregory W. Slayton to its advisory board",
+        "text": "A direct company release shows the founder chapter maturing into an international-growth and strategic-guidance story, not just a run of product interoperability milestones."
+      },
+      "sourceIds": [
+        "slayton-2014"
+      ],
+      "id": "slayton-advisory-board-2014",
+      "chapterId": "founding-bloombase"
     },
     {
       "start_date": {
@@ -274,6 +212,22 @@
         "atto-2017"
       ],
       "id": "atto-certification",
+      "chapterId": "enterprise-validation"
+    },
+    {
+      "start_date": {
+        "year": "2017",
+        "month": "8",
+        "day": "1"
+      },
+      "text": {
+        "headline": "Huawei OceanStor V3 interoperability certification",
+        "text": "Bloombase certifies StoreSafe with Huawei OceanStor V3, extending the validation trail into unified storage infrastructure and telecom / MSP deployment contexts."
+      },
+      "sourceIds": [
+        "huawei-2017"
+      ],
+      "id": "huawei-oceanstor-2017",
       "chapterId": "enterprise-validation"
     },
     {
@@ -415,6 +369,84 @@
       ],
       "id": "utimaco-alliance",
       "chapterId": "ai-era"
+    },
+    {
+      "text": {
+        "headline": "Age 16 - USTC",
+        "text": "Entered the University of Science and Technology of China (working narrative; source verification pending)."
+      },
+      "sourceIds": [
+        "dossier",
+        "timeline-v2"
+      ],
+      "id": "age-16-ustc",
+      "chapterId": "early-acceleration",
+      "dateLabel": "Undated - claim still being tightened",
+      "undated": true,
+      "sortBucket": "formation"
+    },
+    {
+      "text": {
+        "headline": "Early Technical Formation",
+        "text": "Built the foundation for a long technical trajectory."
+      },
+      "sourceIds": [
+        "dossier",
+        "timeline-v2"
+      ],
+      "id": "early-technical-formation",
+      "chapterId": "early-acceleration",
+      "dateLabel": "Undated - opening frame",
+      "undated": true,
+      "sortBucket": "formation"
+    },
+    {
+      "text": {
+        "headline": "Beckman Laser Institute / UC Irvine",
+        "text": "Research chapter in California before the founder arc."
+      },
+      "sourceIds": [
+        "launch-academy",
+        "dossier"
+      ],
+      "id": "beckman-uc-irvine",
+      "chapterId": "california-transition",
+      "dateLabel": "Undated California bridge",
+      "undated": true,
+      "sortBucket": "research"
+    },
+    {
+      "text": {
+        "headline": "CUHK PhD",
+        "text": "Advanced training in Electrical and Electronic Engineering at The Chinese University of Hong Kong."
+      },
+      "sourceIds": [
+        "launch-academy",
+        "dossier"
+      ],
+      "id": "cuhk-phd",
+      "chapterId": "research-formation",
+      "dateLabel": "Undated graduate-era anchor",
+      "undated": true,
+      "sortBucket": "research"
+    },
+    {
+      "text": {
+        "headline": "Bloombase founding chapter becomes publicly visible",
+        "text": "The exact founding-day record remains thin, but direct Bloombase company pages and the 2013 OpenStack / EMC / VMware release trail make the earliest public company narrative materially stronger."
+      },
+      "sourceIds": [
+        "bloombase-about",
+        "bloombase-offices",
+        "bloombase-news-index",
+        "dossier",
+        "timeline-v2"
+      ],
+      "id": "bloombase-founded",
+      "chapterId": "founding-bloombase",
+      "dateLabel": "Pre-2013 public company frame",
+      "undated": true,
+      "sortBucket": "founding"
     }
   ]
 }

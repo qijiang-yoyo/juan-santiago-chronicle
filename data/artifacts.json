@@ -345,5 +345,35 @@
     "displayMode": "document",
     "visualTitle": "ATTO interoperability certification",
     "visualText": "2017-07-17 ? Bloombase frames StoreSafe as interoperable with high-speed storage-networking hardware across SAN and NAS environments."
+  },
+  {
+    "id": "slayton-2014-artifact",
+    "chapterId": "founding-bloombase",
+    "type": "primary-announcement",
+    "eyebrow": "Company milestone ? 2014",
+    "title": "The Slayton advisory-board release shows Bloombase widening into company-building, not only interoperability",
+    "excerpt": "The October 2014 advisory-board announcement matters because it gives the founder chapter a different kind of first-party evidence: strategic growth language, international ambition, and a clearer sense that the company is trying to become an enduring institution rather than just ship integrations.",
+    "caption": "This is useful editorially because it thickens the founder-era middle. The chronicle can show the company building outward ? not only across platforms, but across governance and growth posture.",
+    "sourceId": "slayton-2014",
+    "mediaLabel": "Company milestone card",
+    "supportLabel": "Strategic-growth signal",
+    "displayMode": "document",
+    "visualTitle": "Advisory-board expansion",
+    "visualText": "2014-10-08 ? A direct Bloombase release ties Sean Xiang?s company narrative to international growth ambitions and outside strategic counsel."
+  },
+  {
+    "id": "huawei-2017-artifact",
+    "chapterId": "enterprise-validation",
+    "type": "platform-proof",
+    "eyebrow": "Infrastructure milestone ? 2017",
+    "title": "Huawei OceanStor V3 keeps the 2017 validation arc from thinning out after IBM and ATTO",
+    "excerpt": "The August 2017 Huawei interoperability release adds another direct infrastructure document in the same year, reinforcing that the validation chapter is a cadence of repeated trust proofs rather than a couple of isolated announcements.",
+    "caption": "This strengthens the middle years because the trust layer now touches IBM, ATTO, and Huawei in close succession, across software validation, storage-networking, and unified storage systems.",
+    "sourceId": "huawei-2017",
+    "mediaLabel": "Unified storage card",
+    "supportLabel": "Platform-density signal",
+    "displayMode": "document",
+    "visualTitle": "Huawei OceanStor V3 interoperability",
+    "visualText": "2017-08-01 ? Bloombase extends its direct validation trail into Huawei storage infrastructure and telecom / MSP deployment language."
   }
 ]

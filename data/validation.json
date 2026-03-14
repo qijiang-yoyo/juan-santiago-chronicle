@@ -2,7 +2,7 @@
   {
     "group": "Cloud & platform ecosystems",
     "summary": "The validation story is not a random badge wall. It shows Bloombase repeatedly entering the platforms where enterprise buyers actually evaluate deployment and interoperability.",
-    "metric": "2014-2019 - platform translation",
+    "metric": "2014-2019 ? platform translation",
     "items": [
       {
         "label": "Dell certification",
@@ -21,6 +21,12 @@
         "year": "2017",
         "sourceId": "ibm-2017",
         "note": "A stronger maturity signal that the story remained legible beyond early alliance announcements."
+      },
+      {
+        "label": "Huawei OceanStor V3",
+        "year": "2017",
+        "sourceId": "huawei-2017",
+        "note": "Adds another direct storage-platform interoperability proof in the same period as IBM and ATTO, making 2017 feel denser and more continuous."
       },
       {
         "label": "VMware Cloud on AWS",
@@ -95,6 +101,12 @@
         "year": "2013",
         "sourceId": "vmware-2013",
         "note": "A founding-year signal that virtualization-era trust was part of the thesis from the start."
+      },
+      {
+        "label": "Advisory-board growth signal",
+        "year": "2014",
+        "sourceId": "slayton-2014",
+        "note": "Shows the company widening beyond pure release cadence into strategic growth posture while still speaking from a first-party surface."
       },
       {
         "label": "Hitachi Data Systems",
