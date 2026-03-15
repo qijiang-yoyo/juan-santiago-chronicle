@@ -3704,11 +3704,13 @@
           article.append(paragraphEl);
         });
 
-        const proofList = make('ul', 'proof-list');
-        chapter.proofPoints.forEach((point) => {
-          proofList.append(make('li', '', point));
-        });
-        article.append(proofList);
+        if (chapter.proofPoints?.length) {
+          const proofList = make('ul', 'proof-list');
+          chapter.proofPoints.forEach((point) => {
+            proofList.append(make('li', '', point));
+          });
+          article.append(proofList);
+        }
 
         const evidenceProfile = renderEvidenceProfile(chapter);
         if (evidenceProfile) article.append(evidenceProfile);

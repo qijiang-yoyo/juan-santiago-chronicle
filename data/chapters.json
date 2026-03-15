@@ -1,16 +1,12 @@
 [
   {
     "id": "jincheng-birth",
-    "phase": "Birthplace",
+    "phase": "Early years · Shanxi",
     "range": "Early years",
-    "title": "Shanxi is start",
+    "title": "Born in Jincheng, Shanxi",
     "dek": "Sean Xiang was born in Jincheng, Shanxi.",
-    "narrative": [
-      "Sean Xiang was born in Jincheng, Shanxi."
-    ],
-    "proofPoints": [
-      "Born in Jincheng, Shanxi."
-    ],
+    "narrative": [],
+    "proofPoints": [],
     "locationId": "jincheng",
     "locationIds": ["jincheng"],
     "mapCaption": "Born in Jincheng, Shanxi.",
