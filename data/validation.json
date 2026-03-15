@@ -1,14 +1,14 @@
 [
   {
     "group": "Cloud & platform ecosystems",
-    "summary": "The validation story is not a random badge wall. It shows Bloombase repeatedly entering the platforms where enterprise buyers actually evaluate deployment and interoperability.",
-    "metric": "2014-2019 ? platform translation",
+    "summary": "The validation story demonstrates Bloombase repeatedly securing positions where top enterprise buyers evaluate deployment and interoperability.",
+    "metric": "2014-2019 · platform translation",
     "items": [
       {
         "label": "Dell certification",
         "year": "2014",
         "sourceId": "vmware-2014",
-        "note": "Early dated proof that interoperability was being framed as a certification milestone, not just a product claim."
+        "note": "Early dated proof that formal interoperability certification was a core strategic milestone."
       },
       {
         "label": "HPE Helion / ArcSight",
@@ -20,13 +20,13 @@
         "label": "IBM security validation",
         "year": "2017",
         "sourceId": "ibm-2017",
-        "note": "A stronger maturity signal that the story remained legible beyond early alliance announcements."
+        "note": "A major maturity signal verifying sustained operational legitimacy beyond initial alliances."
       },
       {
         "label": "Huawei OceanStor V3",
         "year": "2017",
         "sourceId": "huawei-2017",
-        "note": "Adds another direct storage-platform interoperability proof in the same period as IBM and ATTO, making 2017 feel denser and more continuous."
+        "note": "A direct storage-platform interoperability proof that solidified a period of dense continuous market validation."
       },
       {
         "label": "VMware Cloud on AWS",
@@ -38,14 +38,14 @@
         "label": "Azure Marketplace",
         "year": "2019",
         "sourceId": "azure-2019",
-        "note": "Public-cloud distribution proof, not just classic enterprise partnership language."
+        "note": "Public-cloud distribution proof highlighting migration capabilities from on-premise solutions."
       }
     ]
   },
   {
     "group": "Security & HSM trust layer",
-    "summary": "The strongest middle-years pattern is trust infrastructure: key management, HSM adjacency, and cryptographic ecosystems where novelty matters less than assurance.",
-    "metric": "2015-2025 ? key custody and trust",
+    "summary": "Core operational patterns emphasize foundational trust infrastructure spanning key management, HSM adjacency, and robust cryptographic ecosystems.",
+    "metric": "2015-2025 · key custody and trust",
     "items": [
       {
         "label": "HP Enterprise Secure Key Manager",
@@ -87,14 +87,14 @@
   },
   {
     "group": "Infrastructure credibility across eras",
-    "summary": "What matters editorially is the accumulation pattern: storage, virtualization, SIEM, cloud marketplaces, and accelerator-era framing all connect back to the same durability thesis.",
-    "metric": "2013-2025 - persistence across waves",
+    "summary": "The accumulation pattern tracks a direct thesis: storage, virtualization, SIEM, cloud marketplaces, and accelerator-era frameworks represent decades of scaling reliability.",
+    "metric": "2013-2025 · persistence across waves",
     "items": [
       {
         "label": "OpenStack community",
         "year": "2013",
         "sourceId": "openstack-2013",
-        "note": "Earliest strong public proof that the company wanted to matter inside cloud infrastructure."
+        "note": "Early public proof establishing focus upon scaling cloud infrastructure security."
       },
       {
         "label": "VMware alliance",
@@ -106,7 +106,7 @@
         "label": "Advisory-board growth signal",
         "year": "2014",
         "sourceId": "slayton-2014",
-        "note": "Shows the company widening beyond pure release cadence into strategic growth posture while still speaking from a first-party surface."
+        "note": "Shows the company expanding strategic governance and growth posture, documented via a first-party advisory installation."
       },
       {
         "label": "Hitachi Data Systems",
@@ -118,13 +118,13 @@
         "label": "ATTO interoperability",
         "year": "2017",
         "sourceId": "atto-2017",
-        "note": "Shows the validation arc persisting into storage-networking infrastructure rather than stopping at early alliance announcements."
+        "note": "Validates protective persistence within critical storage-networking infrastructures."
       },
       {
         "label": "NVIDIA DPU / GPU security framing",
         "year": "2023",
         "sourceId": "nvidia-2023",
-        "note": "Shows the same core problem being reframed for accelerated computing rather than abandoned."
+        "note": "Re-architecting established privacy solutions directly against accelerated computing workloads."
       }
     ]
   }

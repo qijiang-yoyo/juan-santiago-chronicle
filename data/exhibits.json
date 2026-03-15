@@ -7,42 +7,30 @@
       "vmware-2013-artifact"
     ],
     "eyebrow": "Exhibit 01 · Founding release trail",
-    "title": "The founder chapter now rests on dated public releases, not a vague origin myth",
-    "summary": "The strongest editorial move in the early company era is to treat February and August 2013 as the first durable public record. These documents make Sean Xiang legible inside a real enterprise-infrastructure narrative before later validation stacks up.",
-    "curatorNote": "This exhibit matters because it converts the founding section from implied biography into documented market-facing language: co-founder and CEO, cloud privacy, virtualization, and data-at-rest trust.",
-    "comparativeNarrative": "Read the founding chapter as a tightening sequence, not a single origin claim. The first document establishes Sean Xiang in explicit founder language; the second shows the company already speaking to enterprise virtualization buyers within the same public year.",
+    "title": "The founder chapter now rests on dated public releases",
+    "summary": "February and August 2013 provided the first durable public record. These documents make Sean Xiang legible inside a real enterprise-infrastructure narrative before later validation stacks up.",
     "comparativeBeats": [
       {
         "label": "Identity becomes public",
         "title": "OpenStack gives the chapter a named founder frame",
-        "text": "The release matters because it states role, market problem, and company thesis in the same document, which is much stronger than a retrospective company bio.",
+        "text": "The release states role, market problem, and company thesis in the same document.",
         "emphasis": "Role + thesis",
         "signal": "Founder proof"
       },
       {
         "label": "Market texture appears",
-        "title": "VMware shows the company already targeting trust-heavy infrastructure",
-        "text": "This is where the founder chapter stops feeling like a generic startup launch. The buyer language is already about virtualization, cloud trust, and privacy risk.",
+        "title": "VMware shows the company targeting trust-heavy infrastructure",
+        "text": "The buyer language was already about virtualization, cloud trust, and privacy risk.",
         "emphasis": "Infrastructure market",
         "signal": "Enterprise adjacency"
       },
       {
-        "label": "Editorial payoff",
-        "title": "Together they create a usable founding-year sequence",
-        "text": "The exhibit now reads as a progression from role confirmation into ecosystem positioning, which is exactly what a premium founder chronicle needs before the validation years begin.",
-        "emphasis": "Sequence over myth",
+        "label": "Sequence",
+        "title": "A founding-year sequence",
+        "text": "A progression from role confirmation into ecosystem positioning.",
+        "emphasis": "Sequence",
         "signal": "Chronology spine"
       }
-    ],
-    "takeaways": [
-      "The chronicle no longer relies on an implied or symbolic founding story.",
-      "2013 becomes a readable public sequence: founder identification first, enterprise-market positioning second.",
-      "This is enough evidence to frame Bloombase as the narrative spine without pretending to have exact incorporation-day paperwork."
-    ],
-    "lens": [
-      "Best use: establish the first public company narrative without pretending to have exact incorporation-day paperwork.",
-      "Why it carries weight: both pieces are direct Bloombase URLs with dated release context and founder-positioning language.",
-      "Design role: document-style cards should feel archival, not promotional."
     ]
   },
   {
@@ -57,63 +45,51 @@
       "azure-2019-artifact"
     ],
     "eyebrow": "Exhibit 02 · Enterprise validation arc",
-    "title": "The middle years read best as a sequence of trust surfaces",
-    "summary": "Rather than flooding the page with logos, the chronicle now shows how certification, alliance status, HSM trust, storage-networking interoperability, security validation, and marketplace distribution accumulate across several infrastructure waves.",
-    "curatorNote": "This is the chapter that proves durability. Each document marks a different kind of institutional trust: certification, alliance, key custody, hardware-path interoperability, security validation, and cloud distribution.",
-    "comparativeNarrative": "The right reading frame for the middle years is comparative. Each document proves a different trust surface, and the exhibit now makes those surfaces legible as a sequence: entry, breadth, security depth, platform maturity, infrastructure continuity, and cloud translation.",
+    "title": "The middle years read as a sequence of trust surfaces",
+    "summary": "The chronicle shows how certification, alliance status, HSM trust, storage-networking interoperability, security validation, and marketplace distribution accumulate across several infrastructure waves.",
     "comparativeBeats": [
       {
         "label": "2014 · Entry",
-        "title": "Dell certification opens the validation run with concrete interoperability language",
-        "text": "This is the first signal that the company is becoming legible through formal compatibility rather than pure founder narrative.",
+        "title": "Dell certification opens the validation run with interoperability language",
+        "text": "The company becomes legible through formal compatibility.",
         "emphasis": "Certification",
         "signal": "Entry point"
       },
       {
         "label": "2014 · Breadth",
         "title": "Hitachi widens the story from one platform into a broader storage ecosystem",
-        "text": "The exhibit uses this move to show that the trust trail is not one-dimensional; it starts spreading across enterprise infrastructure categories early.",
+        "text": "The trust trail spreads across enterprise infrastructure categories.",
         "emphasis": "Alliance breadth",
         "signal": "Storage expansion"
       },
       {
         "label": "2016 · Security depth",
-        "title": "Ultra Electronics AEP moves the chapter into key custody and HSM posture",
-        "text": "This is where the evidence becomes meaningfully deeper than partner branding. The company is now speaking the language of hardened key storage and enterprise cryptographic architecture.",
+        "title": "Ultra Electronics AEP moves into key custody and HSM posture",
+        "text": "The company speaks the language of hardened key storage and enterprise cryptographic architecture.",
         "emphasis": "HSM trust",
         "signal": "Security depth"
       },
       {
         "label": "2017 · Maturity",
-        "title": "IBM marks the chapter as sustained enterprise validation, not an early burst",
-        "text": "Placed midstream, IBM changes the rhythm of the story by proving that recognition continues after the first wave of ecosystem entry.",
+        "title": "IBM marks sustained enterprise validation",
+        "text": "Recognition continues after the first wave of ecosystem entry.",
         "emphasis": "Security validation",
         "signal": "Maturity cue"
       },
       {
         "label": "2017 · Continuity",
-        "title": "ATTO shows the trust trail touching storage-networking infrastructure as well",
-        "text": "The exhibit now makes visible that the middle years do not only concern software alliances; the story also reaches the physical data path and performance-sensitive infrastructure surfaces.",
+        "title": "ATTO shows the trust trail touching storage-networking infrastructure",
+        "text": "The story reaches the physical data path and performance-sensitive infrastructure surfaces.",
         "emphasis": "Hardware path",
         "signal": "Infrastructure continuity"
       },
       {
         "label": "2019 · Translation",
         "title": "Azure Marketplace carries the validation story into public-cloud distribution",
-        "text": "This is the comparative payoff: the company is not frozen in one era. The same trust logic moves from storage and HSM ecosystems into cloud-era deployment surfaces.",
+        "text": "The same trust logic moves from storage and HSM ecosystems into cloud-era deployment surfaces.",
         "emphasis": "Cloud distribution",
         "signal": "Platform translation"
       }
-    ],
-    "takeaways": [
-      "The middle chapter now reads as an accumulation of trust surfaces rather than a partner wall.",
-      "Different document types carry different meanings: certification, alliance, HSM posture, validation, infrastructure compatibility, and cloud distribution.",
-      "This is the strongest proof of durability in the entire chronicle because it stays active across multiple infrastructure regimes."
-    ],
-    "lens": [
-      "Best use: demonstrate progression, not repetition.",
-      "Why it carries weight: the source mix is dense, first-party, and spread across multiple years rather than clustered in one burst.",
-      "Design role: the reader should feel an evidence cadence, not a partner wall."
     ]
   },
   {
@@ -123,42 +99,23 @@
       "geography-footprint-2018"
     ],
     "eyebrow": "Exhibit 03 · Geography as evidence",
-    "title": "The map becomes credible when expansion logic and operating footprint reinforce each other",
-    "summary": "Vancouver matters because the 2018 Launch Academy profile explains why Canada enters the story, while the Bloombase offices page proves the expansion sits inside a wider operating footprint rather than a symbolic pin.",
-    "curatorNote": "This exhibit protects the geography module from becoming decorative. It answers a real narrative question: how did the journey move across institutions and markets?",
-    "comparativeNarrative": "This exhibit is smaller, but the comparison still matters: one source explains strategic rationale and the other proves operational footprint. The geography chapter works only when those two layers stay tied together.",
+    "title": "Expansion logic",
+    "summary": "Vancouver matters because the 2018 Launch Academy profile explains why Canada enters the story, while the Bloombase offices page proves the expansion sits inside a wider operating footprint.",
     "comparativeBeats": [
       {
         "label": "Why",
-        "title": "The public profile explains why Canada enters the story",
-        "text": "Talent, cryptography, and ecosystem positioning are what give Vancouver narrative meaning.",
+        "title": "Canada enters the story",
+        "text": "Talent, cryptography, and ecosystem positioning gave Vancouver strategic meaning.",
         "emphasis": "Strategic rationale",
         "signal": "Bridge source"
       },
       {
         "label": "Where",
-        "title": "The offices page proves the expansion is part of a real operating network",
-        "text": "This keeps the geography module from acting like atmosphere. The footprint is company-hosted and materially grounded.",
+        "title": "Part of a real operating network",
+        "text": "The footprint is materially grounded and expands the global ecosystem.",
         "emphasis": "Operating footprint",
         "signal": "Primary proof"
-      },
-      {
-        "label": "How to read it",
-        "title": "The chapter should orient, then hand off to evidence",
-        "text": "The map is useful because it clarifies movement across institutions and markets, but the credibility still comes from the paired documents.",
-        "emphasis": "Map-to-evidence handoff",
-        "signal": "Editorial rule"
       }
-    ],
-    "takeaways": [
-      "Place only matters when it changes the story.",
-      "Vancouver is justified by strategy plus footprint, not by generic internationalism.",
-      "This exhibit keeps the geography layer aligned with evidence instead of spectacle."
-    ],
-    "lens": [
-      "Best use: tie place to strategic rationale, not motion for its own sake.",
-      "Why it carries weight: it combines a bridge profile with a direct company geography page.",
-      "Design role: editorial maps should orient the reader, then hand off to evidence."
     ]
   },
   {
@@ -170,42 +127,30 @@
       "utimaco-2025"
     ],
     "eyebrow": "Exhibit 04 · AI-era signal stack",
-    "title": "The closing section has a credible present-tense sequence: reframing, visibility, then alliance execution",
-    "summary": "The AI-era chapter is strongest when it shows how the story reopens: a 2023 technical reframing around NVIDIA DPUs and GPUs, ongoing public news visibility, and a 2025 alliance that explicitly names the AI era.",
-    "curatorNote": "This is the best candidate for richer media treatment later because the sourcing is already direct enough to support stronger visual evidence without drifting into speculative futurism.",
-    "comparativeNarrative": "The AI-era material should be read as a contemporary argument, not a cosmetic refresh. The exhibit now makes that explicit by sequencing technical reframing, visible continuity, and alliance execution into one present-tense narrative.",
+    "title": "A credible present-tense sequence: reframing, visibility, then alliance execution",
+    "summary": "A 2023 technical reframing around NVIDIA DPUs and GPUs, ongoing public news visibility, and a 2025 alliance that explicitly names the AI era.",
     "comparativeBeats": [
       {
         "label": "2023 · Reframing",
-        "title": "NVIDIA shifts the chapter from legacy security into accelerated-computing language",
-        "text": "The important move is conceptual: the company is not just saying it still exists, but explaining how old security primitives should be rebuilt for a new stack.",
+        "title": "NVIDIA brings accelerated-computing language",
+        "text": "The company explained how security primitives should be rebuilt for a new stack.",
         "emphasis": "Technical argument",
         "signal": "Relevance reset"
       },
       {
         "label": "2024 · Continuity",
-        "title": "The live public trail shows the chapter is active between announcement peaks",
-        "text": "Conference and news-surface visibility keep the chronicle from collapsing into two isolated timestamps.",
+        "title": "Ongoing visibility",
+        "text": "Conference and news-surface visibility confirm persistent activity.",
         "emphasis": "Public continuity",
         "signal": "Presence layer"
       },
       {
         "label": "2025 · Execution",
-        "title": "Utimaco makes the AI-era frame explicit in a direct alliance release",
-        "text": "This is the payoff because the alliance language itself names AI-era data security, so the chronicle does not have to infer relevance from vibes or event appearances.",
+        "title": "Utimaco alliance",
+        "text": "The alliance language itself names AI-era data security.",
         "emphasis": "Alliance execution",
         "signal": "Direct present proof"
       }
-    ],
-    "takeaways": [
-      "The current chapter is credible because it has direct, dated primary sources rather than trend-chasing language alone.",
-      "Technical reframing, public continuity, and alliance execution together create a real modern sequence.",
-      "If richer media gets added later, this is the safest chapter to carry it because the evidence base is already strong."
-    ],
-    "lens": [
-      "Best use: argue relevance now, not nostalgia.",
-      "Why it carries weight: the chapter already has named, dated, first-party sources with a clear contemporary thesis.",
-      "Design role: future visuals here should behave like exhibits, not hero decoration."
     ]
   }
 ]

@@ -15,6 +15,36 @@
     }
   },
   {
+    "id": "jincheng",
+    "name": "Jincheng, Shanxi",
+    "label": "Early years / Birthplace",
+    "lat": 35.4907,
+    "lon": 112.8518,
+    "summary": "Sean's birthplace in Jincheng, Shanxi.",
+    "camera": {
+      "center": [
+        112.8518,
+        35.4907
+      ],
+      "zoom": 5.0
+    }
+  },
+  {
+    "id": "hefei",
+    "name": "Hefei, Anhui",
+    "label": "University of Science and Technology of China (USTC)",
+    "lat": 31.8390,
+    "lon": 117.2638,
+    "summary": "Entered USTC at 16 years old. This is the opening mythic milestone for the story.",
+    "camera": {
+      "center": [
+        117.2638,
+        31.8390
+      ],
+      "zoom": 5.0
+    }
+  },
+  {
     "id": "irvine",
     "name": "Irvine, California",
     "label": "Beckman Laser Institute / UC Irvine",
