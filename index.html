@@ -2951,15 +2951,10 @@
     function renderHeroStats(chapters, locations, timeline, sources) {
       const root = document.getElementById('heroStats');
       if (!root) return;
-      const mappedAnchors = locations.filter((location) => !location.distributed && Number.isFinite(location.lat) && Number.isFinite(location.lon) && !(location.lat === 0 && location.lon === 0)).length;
-      const distributedCount = locations.filter((location) => location.distributed).length;
-      const directSources = sources.filter((source) => source.verificationState === 'direct').length;
-      const undatedEvents = timeline.events.filter((event) => !event.start_date?.year).length;
       const stats = [
-        [String(chapters.length), 'Chapters'],
-        [`${mappedAnchors}+${distributedCount}`, 'Mapped anchors + distributed view'],
-        [String(timeline.events.length), 'Archive events'],
-        [String(directSources), 'Direct sources']
+        ['14 years', 'leading Bloombase as CEO'],
+        ['20+', 'enterprise alliances and certifications'],
+        ['Physics → EE PhD → Security CEO', 'the technical arc']
       ];
 
       stats.forEach(([value, text]) => {
