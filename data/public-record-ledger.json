@@ -21,7 +21,7 @@
       {
         "dateLabel": "Dec 12, 2012",
         "title": "Open Virtualization Alliance overview by Bloombase",
-        "summary": "Useful as a bridge source: it proves Bloombase was already visible in secure virtualization discourse before the stronger 2013 company-hosted releases.",
+        "summary": "Useful as a bridge source: it proves Bloombase was visible in secure virtualization discourse before the stronger 2013 company-hosted releases.",
         "url": "http://www.openvirtualizationalliance.org/resources",
         "sourceId": "ova-2012",
         "chapterId": "founding-bloombase",
@@ -78,7 +78,7 @@
       {
         "dateLabel": "Jan 22, 2014",
         "title": "Dell Technology Partner certification",
-        "summary": "One of the early signs that the company is building trust by passing through enterprise partner programs, not just by publishing product claims.",
+        "summary": "One of the early signs that the company is building trust by passing through enterprise partner programs, not by publishing product claims alone.",
         "url": "https://www.bloombase.com/news_and_events/20140122-1.html",
         "sourceId": "vmware-2014",
         "chapterId": "enterprise-validation",

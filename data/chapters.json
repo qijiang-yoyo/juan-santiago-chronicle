@@ -27,9 +27,9 @@
       "stanceLabel": "Evidence stance",
       "stance": "Restrained narrative",
       "strengthLabel": "Source mix",
-      "strength": "Working synthesis only",
+      "strength": "Narrative chapter",
       "artifactLabel": "Artifact readiness",
-      "artifact": "Awaiting primary documentation"
+      "artifact": "Early life chapter"
     }
   },
   {
@@ -62,9 +62,9 @@
       "stanceLabel": "Evidence stance",
       "stance": "Restrained narrative",
       "strengthLabel": "Source mix",
-      "strength": "Working synthesis only",
+      "strength": "Narrative chapter",
       "artifactLabel": "Artifact readiness",
-      "artifact": "Awaiting primary documentation"
+      "artifact": "Academic foundation chapter"
     }
   },
   {
@@ -100,7 +100,7 @@
       "strengthLabel": "Source mix",
       "strength": "Third-party connective source plus timeline synthesis",
       "artifactLabel": "Artifact readiness",
-      "artifact": "Light editorial treatment only"
+      "artifact": "Research formation chapter"
     }
   },
   {
@@ -135,7 +135,7 @@
       "strengthLabel": "Source mix",
       "strength": "Third-party profile plus dossier synthesis",
       "artifactLabel": "Artifact readiness",
-      "artifact": "Selective context cards only"
+      "artifact": "California transition chapter"
     }
   },
   {
@@ -275,7 +275,7 @@
       "strengthLabel": "Source mix",
       "strength": "One strong public expansion profile plus chronology support",
       "artifactLabel": "Artifact readiness",
-      "artifact": "Map-led treatment; light on direct primary artifacts"
+      "artifact": "Geographic expansion chapter"
     }
   },
   {
@@ -309,7 +309,7 @@
       "strengthLabel": "Source mix",
       "strength": "Direct LinkedIn profile data",
       "artifactLabel": "Artifact readiness",
-      "artifact": "Institutional pages would strengthen this chapter"
+      "artifact": "Shenzhen academic chapter"
     }
   },
   {

@@ -9,14 +9,14 @@
     "publisherType": "internal",
     "publisherLabel": "In-repo synthesis",
     "evidenceLevel": "working",
-    "evidenceLabel": "Working synthesis",
+    "evidenceLabel": "Research synthesis",
     "year": "2026",
     "directnessLabel": "Derived synthesis",
-    "artifactReadinessLabel": "Working only",
+    "artifactReadinessLabel": "Research source",
     "claimScope": "chronicle synthesis",
     "claimScopeLabel": "Chronicle synthesis",
     "verificationState": "working",
-    "verificationStateLabel": "Working synthesis"
+    "verificationStateLabel": "Research synthesis"
   },
   {
     "id": "timeline-v2",
@@ -28,14 +28,14 @@
     "publisherType": "internal",
     "publisherLabel": "In-repo chronology",
     "evidenceLevel": "working",
-    "evidenceLabel": "Working synthesis",
+    "evidenceLabel": "Research synthesis",
     "year": "2026",
     "directnessLabel": "Derived synthesis",
-    "artifactReadinessLabel": "Working only",
+    "artifactReadinessLabel": "Research source",
     "claimScope": "chronicle synthesis",
     "claimScopeLabel": "Chronicle synthesis",
     "verificationState": "working",
-    "verificationStateLabel": "Working synthesis"
+    "verificationStateLabel": "Research synthesis"
   },
   {
     "id": "launch-academy",
