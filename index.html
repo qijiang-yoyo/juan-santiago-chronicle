@@ -5338,12 +5338,15 @@
         lastActive = { locationId, chapter };
         
         // Debug logging
-        console.log('setActive called:', { 
-          locationId, 
-          chapterId: chapter?.id, 
-          chapterPhase: chapter?.phase,
-          mapCamera: chapter?.mapCamera 
-        });
+        console.log('=== setActive called ===');
+        console.log('locationId:', locationId);
+        console.log('chapter:', chapter);
+        console.log('chapter.id:', chapter?.id);
+        console.log('chapter.phase:', chapter?.phase);
+        console.log('chapter.mapCamera:', chapter?.mapCamera);
+        console.log('chapter.mapCamera type:', typeof chapter?.mapCamera);
+        console.log('chapter.mapCamera.center:', chapter?.mapCamera?.center);
+        console.log('========================');
 
         locations.forEach((location) => {
           const marker = markers.get(location.id);
@@ -5364,7 +5367,10 @@
         mode.textContent = stage?.modeLabel || 'Narrative geography';
         context.textContent = chapter ? `${chapter.phase} · ${chapter.range}` : 'Narrative geography';
 
-        if (!map.loaded()) return;
+        if (!map.loaded()) {
+          console.log('Map not loaded yet, will apply on load');
+          return;
+        }
 
         const activeRouteSource = map.getSource('active-route');
         if (activeRouteSource && stage?.featureCollection) {
@@ -5372,7 +5378,14 @@
         }
 
         const camera = chapter?.mapCamera || current?.camera;
-        console.log('Flying to camera:', camera); // Debug log
+        console.log('Camera selection:', { 
+          hasChapterMapCamera: !!chapter?.mapCamera,
+          chapterMapCamera: chapter?.mapCamera,
+          hasCurrentCamera: !!current?.camera,
+          currentCamera: current?.camera,
+          selectedCamera: camera,
+          currentLocation: current
+        });
         
         if (!camera?.center || !Number.isFinite(camera.zoom)) {
           console.log('Invalid camera, using fallback');
@@ -5406,15 +5419,25 @@
     function activateScrollSync(chapters, setActiveLocation) {
       const chapterEls = chapters.map((chapter) => document.getElementById(chapter.id));
       const railLinks = Array.from(document.querySelectorAll('.phase-rail a'));
+      let isScrolling = false;
+      let scrollTimeout;
+      let isInitialized = false;
 
       railLinks.forEach((link) => {
         link.addEventListener('click', () => {
           const chapter = chapters.find((c) => c.id === link.dataset.target);
-          if (chapter) setActiveLocation(chapter.locationId, chapter);
+          if (chapter) {
+            isScrolling = true;
+            clearTimeout(scrollTimeout);
+            setActiveLocation(chapter.locationId, chapter);
+            scrollTimeout = setTimeout(() => { isScrolling = false; }, 2000);
+          }
         });
       });
 
       const observer = new IntersectionObserver((entries) => {
+        if (!isInitialized) return; // Skip initial observations
+        if (isScrolling) return; // Skip updates during programmatic scrolling
         const visible = entries
           .filter((entry) => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
@@ -5432,6 +5455,16 @@
       chapterEls.forEach((el) => observer.observe(el));
       railLinks[0]?.classList.add('active');
       setActiveLocation(chapters[0].locationId, chapters[0]);
+      
+      // Allow observer to start working after initial setup
+      setTimeout(() => { isInitialized = true; }, 500);
+      
+      // Also handle chronicle:focus-chapter events to disable observer during programmatic scrolls
+      window.addEventListener('chronicle:focus-chapter', () => {
+        isScrolling = true;
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => { isScrolling = false; }, 2000);
+      });
     }
 
     async function init() {
@@ -5488,8 +5521,15 @@
       // Connect chronicle:focus-chapter events to map updates
       window.addEventListener('chronicle:focus-chapter', (event) => {
         const chapterId = event.detail?.chapterId;
+        console.log('chronicle:focus-chapter event received:', { chapterId, hasChapter: chaptersById.has(chapterId) });
         if (!chapterId || !chaptersById.has(chapterId)) return;
         const chapter = chaptersById.get(chapterId);
+        console.log('Chapter retrieved from map:', { 
+          id: chapter.id, 
+          locationId: chapter.locationId, 
+          hasMapCamera: !!chapter.mapCamera,
+          mapCamera: chapter.mapCamera 
+        });
         setActiveLocation(chapter.locationId, chapter);
       });
     }
