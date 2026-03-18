@@ -5408,18 +5408,9 @@
       const railLinks = Array.from(document.querySelectorAll('.phase-rail a'));
 
       railLinks.forEach((link) => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          const targetId = link.dataset.target;
-          const chapter = chapters.find((c) => c.id === targetId);
-          if (chapter) {
-            setActiveLocation(chapter.locationId, chapter);
-            // Scroll to chapter
-            const chapterEl = document.getElementById(chapter.id);
-            if (chapterEl) {
-              chapterEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-          }
+        link.addEventListener('click', () => {
+          const chapter = chapters.find((c) => c.id === link.dataset.target);
+          if (chapter) setActiveLocation(chapter.locationId, chapter);
         });
       });
 
