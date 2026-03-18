@@ -1,50 +1,62 @@
 [
   {
-    "id": "profile-source",
-    "label": "Profile source",
-    "description": "Third-party profile or expansion story that connects multiple chapters of the biography.",
-    "tone": "context"
+    "id": "academic-credential",
+    "label": "Academic credential",
+    "description": "Degree or educational qualification establishing academic foundation.",
+    "tone": "foundation"
   },
   {
-    "id": "alliance-announcement",
-    "label": "Alliance announcement",
-    "description": "Direct company announcement marking interoperability, partnership, or ecosystem validation.",
+    "id": "federal-award",
+    "label": "Federal award",
+    "description": "Award or recognition from federal agencies (NSF, White House, etc.).",
     "tone": "validation"
   },
   {
-    "id": "platform-proof",
-    "label": "Platform proof",
-    "description": "A launch, listing, or integration that shows distribution or infrastructure relevance.",
+    "id": "society-fellowship",
+    "label": "Society fellowship",
+    "description": "Election to fellowship in professional societies (APS, ASME, AIMBE, etc.).",
+    "tone": "recognition"
+  },
+  {
+    "id": "academy-election",
+    "label": "Academy election",
+    "description": "Election to national academies (NAE, AAAS, NAI) representing highest honors.",
+    "tone": "pinnacle"
+  },
+  {
+    "id": "research-metrics",
+    "label": "Research metrics",
+    "description": "Quantitative measures of research productivity and impact (publications, citations, h-index).",
     "tone": "evidence"
   },
   {
-    "id": "ai-positioning",
-    "label": "AI positioning",
-    "description": "A source that reframes Bloombase for accelerated computing, data pipelines, or AI-era security.",
-    "tone": "present"
+    "id": "innovation-award",
+    "label": "Innovation award",
+    "description": "Recognition of innovative work and practical applications.",
+    "tone": "innovation"
   },
   {
-    "id": "primary-announcement",
-    "label": "Primary announcement",
-    "description": "A dated first-party release suitable for stronger editorial treatment because it is direct and specific.",
-    "tone": "primary"
+    "id": "administrative-appointment",
+    "label": "Administrative appointment",
+    "description": "Leadership positions within academic institutions.",
+    "tone": "leadership"
   },
   {
-    "id": "founding-proof",
-    "label": "Founding proof",
-    "description": "An early first-party release that makes the opening public company narrative more concrete than a generic founding claim.",
-    "tone": "primary"
+    "id": "editorial-leadership",
+    "label": "Editorial leadership",
+    "description": "Editorial positions in scholarly journals and publications.",
+    "tone": "influence"
   },
   {
-    "id": "geography-proof",
-    "label": "Geography proof",
-    "description": "A source-backed artifact that turns location and office footprint into narrative evidence instead of decorative mapping.",
-    "tone": "primary"
+    "id": "mentorship-outcomes",
+    "label": "Mentorship outcomes",
+    "description": "Documentation of student training and career placements.",
+    "tone": "legacy"
   },
   {
-    "id": "ecosystem-visibility",
-    "label": "Ecosystem visibility",
-    "description": "A grouped artifact for conference, platform, and alliance signals that keep the present-tense chapter grounded in dated sources.",
-    "tone": "present"
+    "id": "lifetime-achievement",
+    "label": "Lifetime achievement",
+    "description": "Career-spanning recognition of sustained contributions.",
+    "tone": "culmination"
   }
 ]

@@ -1,66 +1,59 @@
 [
   {
-    "id": "bloombase-news-index-capture",
-    "title": "Preserved Bloombase news index capture",
-    "eyebrow": "Archive capture · first-party chronology surface",
-    "summary": "A local preserved copy of the Bloombase news-and-events index turns the release trail itself into evidence. Instead of citing the company chronology abstractly, the chronicle can now show the index page that exposes the 2012 → 2025 sequence in one place.",
-    "capturePath": "./news-index.html",
-    "captureLabel": "Open preserved HTML capture",
-    "capturedFrom": "https://www.bloombase.com/news_and_events",
-    "capturedFromLabel": "Original Bloombase news index",
-    "coverageLabel": "Visible chronology coverage",
-    "coverageValue": "2012 → 2025",
+    "id": "stanford-profile-capture",
+    "title": "Stanford faculty profile",
+    "eyebrow": "Archive capture · institutional profile",
+    "summary": "Stanford University faculty profile provides authoritative documentation of Santiago's academic appointments, research focus, and honors.",
+    "capturePath": "https://profiles.stanford.edu/juan-santiago",
+    "captureLabel": "Stanford faculty profile",
+    "capturedFrom": "https://profiles.stanford.edu/juan-santiago",
+    "capturedFromLabel": "Stanford University Profiles",
+    "coverageLabel": "Career documentation",
+    "coverageValue": "1998 → present",
     "metrics": [
       {
-        "value": "16",
-        "label": "Visible dated entries"
+        "value": "Professor",
+        "label": "Current rank"
       },
       {
-        "value": "2013",
-        "label": "Founder trail turns dense"
+        "value": "1998",
+        "label": "Stanford appointment"
       },
       {
-        "value": "2019",
-        "label": "Partner-hosted Marvell proof included"
+        "value": "Director",
+        "label": "Microfluidics Laboratory"
       },
       {
-        "value": "1",
-        "label": "Commented-out 2017 Huawei entry preserved in source"
+        "value": "Vice Chair",
+        "label": "Mechanical Engineering"
       }
     ],
     "notes": [
-      "Useful because it proves the chronology is not assembled only from scattered direct URLs; the index itself shows the release cadence on a first-party page.",
-      "The commented-out Huawei 2017 block remains visible in the preserved HTML, which is valuable for explaining why the site keeps that source as supporting chronology even though it is not rendered live on the page."
+      "Primary institutional source documenting Santiago's Stanford career and current positions.",
+      "Provides authoritative confirmation of academic appointments and leadership roles."
     ],
     "entryHighlights": [
       {
-        "dateLabel": "Dec 12, 2012",
-        "title": "Open Virtualization Alliance overview by Bloombase",
-        "summary": "Shows the bridge source that predates the denser first-party release run."
+        "dateLabel": "1998",
+        "title": "Joined Stanford faculty",
+        "summary": "Faculty appointment in Mechanical Engineering."
       },
       {
-        "dateLabel": "Feb 18, 2013",
-        "title": "Bloombase joins OpenStack community",
-        "summary": "Where the founder-era chronology becomes direct and company-hosted."
+        "dateLabel": "Present",
+        "title": "Charles Lee Powell Foundation Professor",
+        "summary": "Endowed professorship recognizing sustained excellence."
       },
       {
-        "dateLabel": "Mar 5, 2019",
-        "title": "Marvell Teams with Bloombase for LiquidSecurity Network HSM",
-        "summary": "Important because the first-party index itself points out to a partner-hosted press release, thickening the trust-layer story."
+        "dateLabel": "Present",
+        "title": "Director, Stanford Microfluidics Laboratory",
+        "summary": "Laboratory founding and ongoing leadership."
       },
       {
-        "dateLabel": "Apr 29, 2025",
-        "title": "Bloombase and Utimaco announce technology alliance for the AI era",
-        "summary": "Extends the same chronology surface into the present-tense AI chapter."
+        "dateLabel": "2020-present",
+        "title": "Vice Chair, Mechanical Engineering Department",
+        "summary": "Departmental leadership role."
       }
     ],
-    "sourceIds": [
-      "bloombase-news-index-capture-2026",
-      "bloombase-news-index",
-      "ova-2012",
-      "openstack-2013",
-      "marvell-2019",
-      "utimaco-2025"
-    ]
+    "sourceIds": ["stanford-profile", "microfluidics-lab", "dossier"]
   }
 ]

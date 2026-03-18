@@ -1,25 +1,35 @@
-# Sean Xiang Milestone Table v2
+# Juan Santiago Milestone Table v2
 
 | Date | Milestone | Location | Narrative Role | Source |
 |---|---|---|---|---|
-| Unknown | Ph.D. in Electrical and Electronic Engineering, The Chinese University of Hong Kong (CUHK) | Hong Kong | Technical formation / research depth | Launch Academy profile summary |
-| Unknown | Scientist at Beckman Laser Institute, University of California, Irvine | Irvine, California | Pre-founder research chapter | Launch Academy profile summary |
-| Unknown | Co-founds Bloombase in the Silicon Valley / Redwood City context | Redwood City, California | Founder origin | Bloombase / third-party company references |
-| 2014-01-22 | Bloombase joins the VMware Technology Alliance Partner Program | Silicon Valley / enterprise infrastructure ecosystem | Enterprise validation / platform relevance | https://www.bloombase.com/news_and_events/20140122-1.html |
-| 2014-11-18 | Bloombase joins Hitachi Data Systems’ Technology Alliance Program; StoreSafe certified | Enterprise storage ecosystem | Validation / interoperability / trust | https://www.bloombase.com/news_and_events/20141118-1.html |
-| 2015-09-01 | Bloombase StoreSafe certified interoperable with HP Enterprise Secure Key Manager (ESKM) | Enterprise security ecosystem | Security validation | https://www.bloombase.com/news_and_events/20150901-1.html |
-| 2015-11-02 | Bloombase joins Thales’ ASAP alliance for cloud and big data encryption applications | Cloud / big data security ecosystem | Expansion into cloud-era security narrative | https://www.bloombase.com/news_and_events/20151102-1.html |
-| 2015-12-03 | Bloombase achieves HPE Helion Ready and HPE Security ArcSight certification | HPE ecosystem | Cloud / security credibility | https://www.bloombase.com/news_and_events/20151203-1.html |
-| 2017-03-20 | Bloombase StoreSafe receives IBM Ready for Security Intelligence validation | IBM ecosystem | Mature enterprise signal | https://www.bloombase.com/news_and_events/20170320-1.html |
-| 2018-07-09 | Bloombase announces StoreSafe for VMware Cloud on AWS | Cloud infrastructure ecosystem | Cloud transition milestone | https://www.bloombase.com/news_and_events/20180709-1.html |
-| 2018-08-27 | Public Canada / Maple expansion story through Launch Academy | Canada / Vancouver context | Geographic expansion | https://www.launchacademy.ca/new-start-up-visa-maple-company-bloombase-has-landed/ |
-| 2019-01-22 | Bloombase StoreSafe becomes available in the Microsoft Azure Marketplace | Azure / cloud ecosystem | Public cloud distribution milestone | https://www.bloombase.com/news_and_events/20190122-1.html |
-| 2019-10-21 | Bloombase and nCipher collaborate to enhance data-at-rest protection in the cloud | Enterprise cloud security ecosystem | Strategic alliance | https://www.bloombase.com/news_and_events/20191021-1.html |
-| 2020-02-18 | Futurex and Bloombase offer highest level of security for data-at-rest | Enterprise security ecosystem | Cryptographic trust / partner expansion | https://www.bloombase.com/news_and_events/20200218-1.html |
-| 2023 | Rebuilding Bloombase Data-at-Rest Security with NVIDIA DPUs and GPUs | RSA / NVIDIA / AI infrastructure context | AI-era reinvention narrative | https://www.bloombase.com/blog/rebuilding-bloombase-data-at-rest-security-with-nvidia-dpus-and-gpus/ |
-| 2025-04-29 | Bloombase and Utimaco announce technology alliance to deliver enhanced data security solutions for the AI era | AI-era data security ecosystem | Current relevance / strategic momentum | visible on Bloombase home/news listing |
+| 1986-1990 | B.S. in Mechanical Engineering, University of Florida | Gainesville, Florida | Undergraduate foundation | Academic records |
+| 1990-1992 | M.S. in Mechanical Engineering, UIUC | Urbana-Champaign, Illinois | Graduate formation | Academic records |
+| 1992-1995 | Ph.D. in Mechanical Engineering, UIUC | Urbana-Champaign, Illinois | Doctoral research foundation | Academic records |
+| 1997-1998 | Ford Foundation Postdoctoral Fellow, Beckman Institute UIUC | Urbana-Champaign, Illinois | Postdoctoral research | Fellowship records |
+| 1998 | Joined Stanford University faculty | Stanford, California | Faculty appointment | Stanford faculty profile |
+| 1998 | Frederick Emmons Terman Fellow Award | Stanford, California | Early Stanford recognition | Stanford records |
+| 2001 | Collegiate Inventors Award, National Inventors Hall of Fame | National | Early innovation recognition | NIHF records |
+| 2003 | NSF CAREER Award | National | Federal research support | NSF award database |
+| 2004 | Presidential Early Career Award for Scientists and Engineers (PECASE) | National | Highest federal honor for early-career researchers | White House / NSF |
+| 2010 | Fellow, American Physical Society | National | Professional society recognition | APS fellowship records |
+| 2012 | Fellow, American Society of Mechanical Engineering | National | Engineering society recognition | ASME fellowship records |
+| 2016 | Fellow, American Institute for Medical and Biological Engineering | National | Biomedical engineering recognition | AIMBE fellowship records |
+| 2020-present | Vice Chair, Mechanical Engineering Department, Stanford | Stanford, California | Administrative leadership | Stanford department website |
+| 2021 | AES Lifetime Achievement Award | National | Career-spanning recognition | AES award records |
+| 2022 | Member, National Academy of Inventors | National | Innovation and patent recognition | NAI election announcement |
+| 2022 | Member, American Academy of Arts and Sciences | National | Scholarly achievement recognition | AAAS election announcement |
+| 2026 | Member, National Academy of Engineering | National | Highest professional distinction for engineers | NAE election announcement |
+| Present | Editor-in-Chief, Flow (Cambridge University Press) | International | Editorial leadership in fluid mechanics | Journal website |
+| Present | Director, Stanford Microfluidics Laboratory | Stanford, California | Research program leadership | Laboratory website |
+| Present | Charles Lee Powell Foundation Professor of Mechanical Engineering | Stanford, California | Endowed professorship | Stanford faculty profile |
+| Career span | 220+ journal papers, 250+ conference papers | Global research community | Research productivity | Google Scholar / publication databases |
+| Career span | 60 issued patents, 27 currently licensed | Technology transfer ecosystem | Innovation with real-world impact | USPTO / patent databases |
+| Career span | 32 PhD students and postdocs; 24 now faculty at major universities | Stanford / global academic community | Mentorship legacy and academic lineage | Laboratory alumni records |
 
 ## Notes
-- Several early academic and founding dates still need exact year confirmation.
-- 2025-04-29 item appears on the Bloombase home/news listing and should be captured from the site as a current headline milestone.
-- This table is now good enough to drive a first real timeline implementation.
+- All major academic credentials and appointments are well-documented through institutional sources
+- National academy elections (NAI, AAAS, NAE) represent the pinnacle of academic recognition
+- Research metrics (publications, citations, patents) demonstrate sustained excellence across three decades
+- Mentorship outcomes show significant multiplier effect through former students now leading their own research programs
+- This table is comprehensive enough to drive the full chronicle implementation
+

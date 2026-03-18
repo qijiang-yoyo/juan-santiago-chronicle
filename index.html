@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sean Xiang — Founder Chronicle</title>
-  <meta name="description" content="A source-backed editorial chronicle of Sean Xiang's path from research to enterprise security founder and AI-era infrastructure builder." />
+  <title>Juan Santiago — Professor Chronicle</title>
+  <parameter name="description" content="A source-backed editorial chronicle of Juan Santiago's distinguished academic career from graduate studies to Stanford professor and National Academy of Engineering member." />
   <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
   <style>
     :root {
@@ -1509,9 +1509,9 @@
     }
     .timeline-card[data-group="formation"] { border-left: 3px solid rgba(180,138,90,.55); }
     .timeline-card[data-group="research"] { border-left: 3px solid rgba(87,110,150,.45); }
-    .timeline-card[data-group="company"] { border-left: 3px solid rgba(25,50,79,.42); }
-    .timeline-card[data-group="validation"] { border-left: 3px solid rgba(45,95,115,.45); }
-    .timeline-card[data-group="ai-era"] { border-left: 3px solid rgba(104,92,156,.45); }
+    .timeline-card[data-group="faculty"] { border-left: 3px solid rgba(25,50,79,.42); }
+    .timeline-card[data-group="recognition"] { border-left: 3px solid rgba(45,95,115,.45); }
+    .timeline-card[data-group="leadership"] { border-left: 3px solid rgba(104,92,156,.45); }
     .timeline-card.is-highlighted {
       border-color: rgba(180,138,90,.48);
       box-shadow: 0 0 0 3px rgba(180,138,90,.16), 0 20px 38px rgba(31,39,50,.10);
@@ -2727,23 +2727,23 @@
 <body>
   <main class="shell">
     <div class="topline">
-      <span>Sean Xiang Chronicle</span>
+      <span>Juan Santiago Chronicle</span>
     </div>
 
     <section class="hero">
       <article class="card hero-copy">
-        <div class="eyebrow">Founder chronicle</div>
-        <h1>Sean Xiang</h1>
-        <p class="lede">From doctoral engineering formation to a long enterprise-security build — and now a present-tense case for AI infrastructure.</p>
+        <div class="eyebrow">Professor chronicle</div>
+        <h1>Juan Santiago</h1>
+        <p class="lede">From undergraduate engineering foundation to distinguished Stanford professor — and now a member of the National Academy of Engineering.</p>
         <p class="summary">
-          An editorial archive tracing academic research through enterprise validation, anchored by a verifiable timeline, geography, and primary sources.
+          An editorial archive tracing academic formation through research excellence and national recognition, anchored by a verifiable timeline, geography, and institutional sources.
         </p>
         <div class="chips" id="heroChips">
-          <span class="chip">CUHK Ph.D.</span>
-          <span class="chip">Beckman / UC Irvine</span>
-          <span class="chip">Bloombase</span>
-          <span class="chip">Enterprise security alliances</span>
-          <span class="chip">NVIDIA / AI-era repositioning</span>
+          <span class="chip">University of Florida</span>
+          <span class="chip">UIUC Ph.D.</span>
+          <span class="chip">Stanford faculty</span>
+          <span class="chip">National academy member</span>
+          <span class="chip">220+ publications</span>
         </div>
       </article>
 
@@ -2751,7 +2751,7 @@
         <div>
           <div class="aside-title">Chronicle thesis</div>
           <p class="summary" style="margin-top:8px; margin-bottom:0;">
-            Technical depth, compounded over decades, into enterprise leadership. It traces ecosystem partnerships through a present-tense focus on AI infrastructure.
+            Academic excellence, sustained over three decades, into national recognition. It traces research impact through mentorship legacy with a present-tense focus on scholarly leadership.
           </p>
         </div>
         <div class="thesis-grid" id="heroStats"></div>
@@ -2826,7 +2826,7 @@
         <section class="card map-panel">
           <div class="section-label">Geography</div>
           <div class="map-shell">
-            <div id="map" aria-label="Map showing the geographic arc of Sean Xiang's chronicle"></div>
+            <div id="map" aria-label="Map showing the geographic arc of Juan Santiago's academic journey"></div>
             <div class="map-overlay"></div>
             <div class="map-caption">
               <h3 id="mapTitle">Loading…</h3>
@@ -2952,9 +2952,9 @@
       const root = document.getElementById('heroStats');
       if (!root) return;
       const stats = [
-        ['14 years', 'leading Bloombase as CEO'],
-        ['20+', 'enterprise alliances and certifications'],
-        ['Physics → EE PhD → Security CEO', 'the technical arc']
+        ['28 years', 'Stanford faculty member'],
+        ['3', 'national academy memberships'],
+        ['B.S. → Ph.D. → Professor → NAE', 'the academic arc']
       ];
 
       stats.forEach(([value, text]) => {
@@ -4795,11 +4795,11 @@
 
     function chapterTone(chapter) {
       const blob = `${chapter.id} ${chapter.phase} ${chapter.title}`.toLowerCase();
-      if (blob.includes('early') || blob.includes('formation')) return 'formation';
-      if (blob.includes('research') || blob.includes('cuhk') || blob.includes('california')) return 'research';
-      if (blob.includes('founding') || blob.includes('bloombase')) return 'founder';
-      if (blob.includes('validation') || blob.includes('expansion')) return 'validation';
-      return 'ai-era';
+      if (blob.includes('early') || blob.includes('formation') || blob.includes('florida')) return 'formation';
+      if (blob.includes('research') || blob.includes('uiuc') || blob.includes('graduate') || blob.includes('postdoc')) return 'research';
+      if (blob.includes('stanford') || blob.includes('faculty') || blob.includes('appointment')) return 'faculty';
+      if (blob.includes('recognition') || blob.includes('fellowship') || blob.includes('academy')) return 'recognition';
+      return 'leadership';
     }
 
     function renderMapNav(chapters, locationsById, eventsByChapterId, sourcesById) {
@@ -4850,10 +4850,11 @@
     function classifyEvent(headline, text) {
       const blob = `${headline} ${text}`.toLowerCase();
       if (blob.includes('ustc') || blob.includes('technical formation') || blob.includes('age 16')) return 'formation';
-      if (blob.includes('cuhk') || blob.includes('uc irvine') || blob.includes('beckman')) return 'research';
-      if (blob.includes('nvidia') || blob.includes('utimaco') || blob.includes('conference')) return 'ai-era';
-      if (blob.includes('founded') || blob.includes('marketplace') || blob.includes('canada expansion')) return 'company';
-      return 'validation';
+      if (blob.includes('florida') || blob.includes('undergraduate')) return 'formation';
+      if (blob.includes('uiuc') || blob.includes('illinois') || blob.includes('beckman') || blob.includes('graduate')) return 'research';
+      if (blob.includes('stanford') || blob.includes('faculty') || blob.includes('professor')) return 'faculty';
+      if (blob.includes('award') || blob.includes('fellow') || blob.includes('academy') || blob.includes('recognition')) return 'recognition';
+      return 'leadership';
     }
 
     function hasStructuredStartDate(event) {
@@ -4945,9 +4946,9 @@
         ['all', 'All'],
         ['formation', 'Formation'],
         ['research', 'Research'],
-        ['company', 'Company'],
-        ['validation', 'Validation'],
-        ['ai-era', 'AI era']
+        ['faculty', 'Faculty'],
+        ['recognition', 'Recognition'],
+        ['leadership', 'Leadership']
       ];
       const sourceOrigins = [
         ['all', 'All sources'],
