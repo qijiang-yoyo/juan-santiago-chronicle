@@ -5336,6 +5336,14 @@
 
       function setActive(locationId, chapter) {
         lastActive = { locationId, chapter };
+        
+        // Debug logging
+        console.log('setActive called:', { 
+          locationId, 
+          chapterId: chapter?.id, 
+          chapterPhase: chapter?.phase,
+          mapCamera: chapter?.mapCamera 
+        });
 
         locations.forEach((location) => {
           const marker = markers.get(location.id);
@@ -5364,22 +5372,32 @@
         }
 
         const camera = chapter?.mapCamera || current?.camera;
-        if (camera?.center && Number.isFinite(camera.zoom)) {
-          map.flyTo({
-            center: camera.center,
-            zoom: camera.zoom,
-            pitch: Number.isFinite(camera.pitch) ? camera.pitch : 0,
-            bearing: Number.isFinite(camera.bearing) ? camera.bearing : 0,
-            speed: locationId === 'global-ai' ? 0.42 : 0.5,
-            curve: 1.2,
-            essential: true
-          });
+        console.log('Flying to camera:', camera); // Debug log
+        
+        if (!camera?.center || !Number.isFinite(camera.zoom)) {
+          console.log('Invalid camera, using fallback');
+          if (current && current.lon !== 0 && current.lat !== 0) {
+            map.flyTo({ center: [current.lon, current.lat], zoom: 3.1, speed: 0.55, essential: true });
+          }
           return;
         }
-
-        if (current && current.lon !== 0 && current.lat !== 0) {
-          map.flyTo({ center: [current.lon, current.lat], zoom: 3.1, speed: 0.55, essential: true });
-        }
+        
+        console.log('Executing flyTo with:', {
+          center: camera.center,
+          zoom: camera.zoom,
+          pitch: Number.isFinite(camera.pitch) ? camera.pitch : 0,
+          bearing: Number.isFinite(camera.bearing) ? camera.bearing : 0
+        });
+        
+        map.flyTo({
+          center: camera.center,
+          zoom: camera.zoom,
+          pitch: Number.isFinite(camera.pitch) ? camera.pitch : 0,
+          bearing: Number.isFinite(camera.bearing) ? camera.bearing : 0,
+          speed: locationId === 'global-ai' ? 0.42 : 0.5,
+          curve: 1.2,
+          essential: true
+        });
       }
 
       return setActive;
