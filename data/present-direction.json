@@ -1,20 +1,20 @@
 {
   "eyebrow": "Present direction",
   "title": "Why this chronicle matters now",
-  "summary": "The point of the page is not to memorialize an old enterprise-security run. It is to argue that Sean Xiang's long build becomes newly legible in the AI-infrastructure era, where data-at-rest protection, cryptographic trust, and accelerator-era architecture have to meet again.",
+  "summary": "The point of the page is not to memorialize a completed academic career. It is to show how Juan Santiago's sustained contributions to microfluidics, diagnostics, and transport phenomena have created lasting impact through research, innovation, mentorship, and institutional leadership.",
   "signals": [
     {
-      "label": "Long-cycle credibility",
-      "text": "The Bloombase record shows repeated interoperability and alliance milestones across more than one infrastructure generation — from Dell, Hitachi, and IBM in the mid-2010s to VMware Cloud on AWS, Azure Marketplace, and NVIDIA DPUs in the 2020s."
+      "label": "Sustained research excellence",
+      "text": "Santiago's record shows continuous productivity and impact across nearly three decades — from early NSF CAREER and PECASE awards through recent election to the National Academy of Engineering, with 220+ journal papers, 60 patents, and an h-index of 91."
     },
     {
-      "label": "Post-quantum cryptography at GTC 2024",
-      "text": "Sean Xiang participated as a panelist at NVIDIA GTC 2024, discussing AI-era cyber defense alongside executives from NVIDIA, Qrypt, and Reality Defender. Bloombase demonstrated post-quantum cryptography encryption powered by NVIDIA GPU, DPU, and Morpheus AI at the event."
+      "label": "National academy recognition",
+      "text": "Election to three national academies (NAI 2022, AAAS 2022, NAE 2026) represents the highest peer recognition in American science and engineering, confirming transformative contributions to microfluidics and related fields."
     },
     {
-      "label": "2025 alliance and standards membership",
-      "text": "The 2025 Utimaco alliance integrates Bloombase StoreSafe with NIST FIPS 140-2 Level 3 certified HSM key protection and OASIS KMIP-compliant key management. Bloombase also joined the PKI Consortium in November 2024, deepening its standards-level credibility."
+      "label": "Mentorship legacy and institutional leadership",
+      "text": "As Vice Chair of Stanford's Mechanical Engineering Department and Editor-in-Chief of Cambridge's Flow journal, Santiago shapes both his institution and his field. His 32 former PhD students and postdocs — 24 now faculty at major universities — extend his intellectual legacy across the research community."
     }
   ],
-  "sourceIds": ["nvidia-2023", "utimaco-2025", "launch-academy"]
+  "sourceIds": ["stanford-profile", "nae-election", "dossier"]
 }

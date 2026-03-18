@@ -5,35 +5,28 @@
         "type": "overview",
         "text": {
           "headline": "The Geographic Arc",
-          "text": "A founder journey across research, Silicon Valley, security infrastructure, and global expansion."
+          "text": "An academic journey from Florida through Illinois to Stanford, spanning research excellence, innovation, and mentorship."
         }
       },
       {
-        "location": { "lat": 22.4196, "lon": 114.2068, "zoom": 8 },
+        "location": { "lat": 29.6516, "lon": -82.3248, "zoom": 8 },
         "text": {
-          "headline": "Hong Kong / CUHK",
-          "text": "Sean Xiang's doctoral foundation in Electrical and Electronic Engineering at The Chinese University of Hong Kong."
+          "headline": "Gainesville / University of Florida",
+          "text": "Juan Santiago's undergraduate foundation in Mechanical Engineering at University of Florida."
         }
       },
       {
-        "location": { "lat": 33.6405, "lon": -117.8443, "zoom": 9 },
+        "location": { "lat": 40.1106, "lon": -88.2434, "zoom": 9 },
         "text": {
-          "headline": "Irvine / Beckman Laser Institute",
-          "text": "Research chapter at UC Irvine's Beckman Laser Institute before the entrepreneurial arc."
+          "headline": "Urbana-Champaign / UIUC",
+          "text": "Graduate formation (M.S., Ph.D.) and postdoctoral research at University of Illinois, establishing microfluidics expertise."
         }
       },
       {
-        "location": { "lat": 37.4852, "lon": -122.2364, "zoom": 10 },
+        "location": { "lat": 37.4275, "lon": -122.1697, "zoom": 10 },
         "text": {
-          "headline": "Redwood City / Silicon Valley",
-          "text": "Bloombase origin story in the heart of Silicon Valley."
-        }
-      },
-      {
-        "location": { "lat": 49.2827, "lon": -123.1207, "zoom": 8 },
-        "text": {
-          "headline": "Canada / Expansion",
-          "text": "A visible expansion chapter tied to startup visa and future-facing technical ecosystem development."
+          "headline": "Stanford / Faculty Career",
+          "text": "Faculty appointment (1998-present), Stanford Microfluidics Laboratory founding, and distinguished professorship."
         }
       }
     ]

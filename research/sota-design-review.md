@@ -1,6 +1,6 @@
-# Sean Xiang Chronicle — SOTA Design Review
+# Juan Santiago Chronicle — SOTA Design Review
 
-Goal: build a premium founder-chronicle page by borrowing proven patterns from open-source timeline, map-story, and editorial storytelling systems instead of inventing a bespoke interaction model too early.
+Goal: build a premium professor-chronicle page by borrowing proven patterns from open-source timeline, map-story, and editorial storytelling systems instead of inventing a bespoke interaction model too early.
 
 ## 1) Top 5 open-source references
 
@@ -17,8 +17,8 @@ Goal: build a premium founder-chronicle page by borrowing proven patterns from o
 - Demo: https://storymap.knightlab.com/
 - Why it matters:
   - Canonical open-source "map + narrative card" reference.
-  - Useful for the life-journey / geography layer: place, caption, image, transition.
-  - Especially relevant because Sean's biography has clear location chapters (China/Hong Kong -> Irvine -> Silicon Valley -> Canada / global ecosystem).
+  - Useful for the academic-journey / geography layer: place, caption, image, transition.
+  - Especially relevant because Santiago's biography has clear location chapters (Florida -> Illinois -> Stanford).
 
 ### 3. Odyssey.js
 - Repo: https://github.com/CartoDB/odyssey.js
@@ -41,7 +41,7 @@ Goal: build a premium founder-chronicle page by borrowing proven patterns from o
 - Why it matters:
   - Open-source multimedia storytelling system with a more museum / magazine sensibility.
   - Valuable less for direct adoption and more for structure: chaptering, full-bleed media, pacing, transitions, and premium editorial framing.
-  - Good reminder that the site should feel like a curated exhibition, not a startup landing page with a timeline bolted on.
+  - Good reminder that the site should feel like a curated exhibition, not a generic academic CV.
 
 ## 2) What we should directly adopt vs avoid
 
@@ -53,7 +53,7 @@ Goal: build a premium founder-chronicle page by borrowing proven patterns from o
 
 - From StoryMapJS:
   - A chaptered geography layer.
-  - One location per life phase, with concise explanatory copy.
+  - One location per academic phase, with concise explanatory copy.
   - Camera transitions that move only when the story changes.
 
 - From Odyssey.js:
@@ -63,41 +63,45 @@ Goal: build a premium founder-chronicle page by borrowing proven patterns from o
 
 - From vis-timeline:
   - Secondary "archive/reference" mode for power users.
-  - Grouping milestones into phases: Education, Research, Founder, Ecosystem, AI Era.
+  - Grouping milestones into phases: Education, Postdoc, Faculty, Recognition, Leadership, Academies.
   - Range bars for long eras, points for pivotal moments.
 
 - From Pageflow:
   - Full-bleed chapter breaks.
-  - Strong rhythm: intro -> formation -> research -> company building -> ecosystem proof -> present/future.
+  - Strong rhythm: intro -> formation -> faculty appointment -> recognition -> leadership -> legacy.
   - High production-value feeling through spacing, restraint, and media hierarchy.
 
 ### Avoid
 - Do not ship raw TimelineJS3 or StoryMapJS embeds as the main experience.
-  - They are useful references, but the default styling feels educational / newsroom / template-like, not premium-founder-editorial.
+  - They are useful references, but the default styling feels educational / newsroom / template-like, not premium-professor-editorial.
 - Do not over-animate the map.
   - Constant camera movement makes biography pages feel gimmicky.
-- Do not make every partnership logo a milestone.
-  - Too many enterprise badges turns the story into a press-release wall.
+- Do not make every award a milestone.
+  - Too many badges turns the story into a CV wall.
 - Do not force users into a single giant scrollytelling path with no quick navigation.
-  - Founder pages also need a skimmable mode.
+  - Professor pages also need a skimmable mode.
 - Do not use glossy "toy" sci-fi styling without evidence.
-  - The current prototype has energy, but the final version should feel more archival, elegant, and source-backed.
+  - The final version should feel more archival, elegant, and source-backed.
 
-## 3) Recommended information architecture for the Sean Xiang page
+## 3) Recommended information architecture for the Juan Santiago page
 
 ### A. Hero / thesis
 - Name, one-sentence thesis, portrait or restrained abstract visual.
-- Short framing line: early technical prodigy -> research -> enterprise security founder -> AI infrastructure era.
+- Short framing line: undergraduate foundation -> doctoral research -> Stanford faculty -> national academy member.
 - 3-5 proof chips only, not 10+.
 
 ### B. At-a-glance chronology
 - Compact horizontal phase rail:
-  - Early formation
-  - CUHK / PhD
-  - Beckman / UC Irvine
-  - Bloombase founding
-  - Enterprise validation years
-  - AI-era repositioning
+  - Undergraduate (Florida)
+  - Graduate (UIUC)
+  - Postdoc (Beckman)
+  - Stanford faculty
+  - Early recognition
+  - Fellowships
+  - Leadership
+  - National academies
+  - Research impact
+  - Mentorship legacy
 - Clicking a phase jumps to that chapter.
 
 ### C. Main narrative chapters
@@ -106,30 +110,32 @@ Each chapter should have:
 - chapter title
 - 120-220 words of narrative
 - 1-3 key proof points
-- optional image / logo / source link
+- optional image / award / source link
 
 Recommended chapters:
-1. Early acceleration
-2. Research and academic formation
-3. California transition
-4. Founding Bloombase
-5. Enterprise trust and ecosystem validation
-6. Cloud / platform expansion
-7. AI infrastructure chapter
-8. Present direction / why it matters now
+1. Undergraduate foundation
+2. Graduate formation at Illinois
+3. Postdoctoral research
+4. Stanford faculty appointment
+5. Early federal recognition
+6. Professional society fellowships
+7. Academic and editorial leadership
+8. National academy elections
+9. Research productivity and impact
+10. Mentorship legacy
 
 ### D. Geography module
 - A separate but integrated map section.
-- 4-6 key place markers only.
+- 3-4 key place markers only.
 - Each place corresponds to a chapter, not every event.
-- Map should answer: how did the journey move across institutions and markets?
+- Map should answer: how did the journey move across institutions?
 
-### E. Validation / ecosystem section
-- Curated partner wall with context.
-- Better structure than a raw logo grid:
-  - Cloud platforms
-  - Security / HSM partners
-  - Enterprise ecosystem validation
+### E. Recognition / honors section
+- Curated award timeline with context.
+- Better structure than a raw award list:
+  - Federal awards
+  - Professional society fellowships
+  - National academy elections
 - Keep it evidence-driven and selective.
 
 ### F. Archive / sources
@@ -138,7 +144,7 @@ Recommended chapters:
 
 ## 4) Visual / UX principles to make it feel premium, not toy
 
-- Favor editorial elegance over startup-dashboard gloss.
+- Favor editorial elegance over academic-dashboard gloss.
   - More off-white, charcoal, muted blue/green accents.
   - Less neon, fewer decorative orbit effects.
 - Build around typography first.
@@ -152,7 +158,7 @@ Recommended chapters:
 - Use maps as orientation, not spectacle.
   - Clean basemap, limited markers, subtle routes.
 - Prefer real artifacts over abstract decoration.
-  - Photos, scans, conference visuals, article snippets, logos, citations.
+  - Photos, award certificates, publication covers, conference visuals, citations.
 - Maintain dual reading modes:
   - skim mode for busy visitors
   - deep mode for readers who want the full chronology
@@ -173,7 +179,7 @@ Build this now as a lightweight custom site, not as an iframe composition of thi
 - Timeline rendering:
   - custom chapter timeline for the main narrative
   - optional vis-timeline secondary view for "full chronology / archive" mode
-- Content source: structured JSON or YAML in-repo for milestones, chapters, locations, logos, and sources
+- Content source: structured JSON or YAML in-repo for milestones, chapters, locations, awards, and sources
 - Deployment: static build on GitHub Pages / Vercel / Netlify
 
 ### Why this stack now
@@ -189,10 +195,11 @@ Build this now as a lightweight custom site, not as an iframe composition of thi
    - locations.json
    - timeline-events.json
    - sources.json
-2. Build the page as 5-8 curated chapters, not dozens of equal cards.
+2. Build the page as 8-10 curated chapters, not dozens of equal cards.
 3. Sync chapter scroll state with the map.
 4. Add a compact phase rail for jumping.
 5. Add an archive drawer / sources panel last.
 
 ## Bottom line
 The right move is: borrow the information architecture of TimelineJS3 + StoryMapJS + Odyssey.js, but implement a custom editorial surface. That gives us proven storytelling structure without inheriting the dated visual language of off-the-shelf embeds.
+

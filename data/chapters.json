@@ -1,354 +1,367 @@
 [
   {
-    "id": "shanxi-birth",
-    "phase": "Shanxi",
-    "range": "Early years",
-    "title": "Born in Shanxi",
-    "dek": "Sean Xiang was born in Shanxi.",
-    "narrative": [],
+    "id": "florida-undergraduate",
+    "phase": "Florida",
+    "range": "1986-1990",
+    "title": "Undergraduate foundation at University of Florida",
+    "dek": "Juan Santiago earned his B.S. in Mechanical Engineering from University of Florida.",
+    "narrative": [
+      "This marked the beginning of a distinguished academic trajectory in mechanical engineering, establishing a foundation in fundamental engineering principles."
+    ],
     "proofPoints": [],
-    "locationId": "shanxi-birthplace",
-    "locationIds": ["shanxi-birthplace"],
-    "mapCaption": "Born in Shanxi.",
+    "locationId": "gainesville",
+    "locationIds": ["gainesville"],
+    "mapCaption": "Santiago began his engineering education at University of Florida in Gainesville.",
     "mapCamera": {
-      "center": [
-        112.8518,
-        35.4907
-      ],
+      "center": [-82.3248, 29.6516],
       "zoom": 5.0,
       "pitch": 18,
       "bearing": -10
     },
-    "sources": [
-      "dossier",
-      "timeline-v2"
-    ],
+    "sources": ["dossier", "timeline-v2"],
     "evidenceProfile": {
       "stanceLabel": "Evidence stance",
       "stance": "Restrained narrative",
       "strengthLabel": "Source mix",
       "strength": "Narrative chapter",
       "artifactLabel": "Artifact readiness",
-      "artifact": "Early life chapter"
+      "artifact": "Undergraduate foundation chapter"
     }
   },
   {
-    "id": "hefei-ustc",
-    "phase": "USTC",
-    "range": "1980",
-    "title": "Entering USTC",
-    "dek": "Admitted to USTC in Hefei in 1980, majoring in Physics.",
+    "id": "uiuc-graduate",
+    "phase": "UIUC",
+    "range": "1990-1995",
+    "title": "Graduate formation at Illinois",
+    "dek": "M.S. (1992) and Ph.D. (1995) in Mechanical Engineering from University of Illinois at Urbana-Champaign.",
     "narrative": [
-      "This marked the formal beginning of a highly accelerated academic and technical trajectory, laying a rigorous foundation in the sciences."
+      "Juan Santiago's trajectory deepened through rigorous graduate training at one of the nation's premier engineering programs. His doctoral work at UIUC established the technical foundation for his future contributions to microfluidics and electrokinetics.",
+      "This period of intensive research training proved crucial — the scientific rigor developed here would enable decades of innovation in microscale transport phenomena and fluid mechanics."
     ],
     "proofPoints": [],
-    "locationId": "hefei",
-    "locationIds": ["hefei"],
-    "mapCaption": "Xiang entered USTC in Hefei, Anhui in 1980, majoring in Physics.",
+    "locationId": "urbana-champaign",
+    "locationIds": ["urbana-champaign"],
+    "mapCaption": "Ph.D. formation at University of Illinois at Urbana-Champaign in Mechanical Engineering.",
     "mapCamera": {
-      "center": [
-        117.2638,
-        31.8390
-      ],
-      "zoom": 5.0,
-      "pitch": 18,
-      "bearing": -10
-    },
-    "sources": [
-      "dossier",
-      "timeline-v2"
-    ],
-    "evidenceProfile": {
-      "stanceLabel": "Evidence stance",
-      "stance": "Restrained narrative",
-      "strengthLabel": "Source mix",
-      "strength": "Narrative chapter",
-      "artifactLabel": "Artifact readiness",
-      "artifact": "Academic foundation chapter"
-    }
-  },
-  {
-    "id": "research-formation",
-    "phase": "CUHK",
-    "range": "Graduate era – 1997",
-    "title": "A long research arc before Silicon Valley",
-    "dek": "A Ph.D. in Electrical and Electronic Engineering from CUHK, followed by a Research Associate role at HKUST, preceded everything that followed.",
-    "narrative": [
-      "Sean Xiang’s trajectory did not begin with a leap into entrepreneurship, but with a rigorous academic foundation. Earning a Ph.D. in Electrical and Electronic Engineering from The Chinese University of Hong Kong, he established a deep technical baseline.",
-      "After CUHK, a Research Associate role at HKUST (1996–1997) extended his research depth before the move to California. This scientific grounding proved crucial — the later Bloombase architecture proved resilient across multiple computing waves precisely because of this formation period."
-    ],
-    "proofPoints": [],
-    "locationId": "hong-kong",
-    "locationIds": ["hong-kong"],
-    "mapCaption": "Ph.D. formation at The Chinese University of Hong Kong in Electrical and Electronic Engineering.",
-    "mapCamera": {
-      "center": [
-        114.2068,
-        22.4196
-      ],
+      "center": [-88.2434, 40.1106],
       "zoom": 10.5,
       "pitch": 34,
       "bearing": 6
     },
-    "sources": [
-      "launch-academy",
-      "timeline-v2"
-    ],
+    "sources": ["dossier", "timeline-v2"],
     "evidenceProfile": {
       "stanceLabel": "Evidence stance",
       "stance": "Public profile-backed chapter",
       "strengthLabel": "Source mix",
-      "strength": "Third-party connective source plus timeline synthesis",
+      "strength": "Academic credentials plus timeline synthesis",
       "artifactLabel": "Artifact readiness",
-      "artifact": "Research formation chapter"
+      "artifact": "Graduate formation chapter"
     }
   },
   {
-    "id": "california-transition",
+    "id": "postdoc-beckman",
     "phase": "Beckman",
-    "range": "1997–1999",
-    "title": "Bridging science and technology strategy",
-    "dek": "Scientist at the Beckman Laser Institute & Medical Clinic, UC Irvine, August 1997 to December 1999.",
+    "range": "1997-1998",
+    "title": "Postdoctoral research at Beckman Institute",
+    "dek": "Ford Foundation Postdoctoral Fellow and Research Scientist at UIUC's Beckman Institute, 1997-1998.",
     "narrative": [
-      "The move from Hong Kong to California shifted the geography and the network — from academic formation toward the institutional ecosystems of the American technology sector, setting the stage for the company-building phase that followed."
+      "The Ford Foundation Postdoctoral Fellowship provided Santiago with advanced research opportunities at the Beckman Institute for Advanced Science and Technology. This prestigious fellowship supported cutting-edge work in microscale phenomena.",
+      "This postdoctoral period bridged doctoral training and faculty appointment, deepening research expertise before the transition to Stanford."
     ],
     "proofPoints": [],
-    "locationId": "irvine",
-    "locationIds": ["irvine"],
-    "mapCaption": "Scientist at the Beckman Laser Institute, UC Irvine — the transition from pure academia toward company-building.",
+    "locationId": "urbana-champaign",
+    "locationIds": ["urbana-champaign"],
+    "mapCaption": "Postdoctoral research at Beckman Institute, UIUC — the transition toward faculty career.",
     "mapCamera": {
-      "center": [
-        -117.8443,
-        33.6405
-      ],
+      "center": [-88.2434, 40.1106],
       "zoom": 10.5,
       "pitch": 30,
       "bearing": -18
     },
-    "sources": [
-      "launch-academy",
-      "dossier"
-    ],
+    "sources": ["dossier"],
     "evidenceProfile": {
       "stanceLabel": "Evidence stance",
-      "stance": "Bridge chapter with one key public profile anchor",
+      "stance": "Bridge chapter with fellowship anchor",
       "strengthLabel": "Source mix",
-      "strength": "Third-party profile plus dossier synthesis",
+      "strength": "Fellowship record plus dossier synthesis",
       "artifactLabel": "Artifact readiness",
-      "artifact": "California transition chapter"
+      "artifact": "Postdoctoral transition chapter"
     }
   },
   {
-    "id": "founding-bloombase",
-    "phase": "Bloombase",
-    "range": "2012–present",
-    "title": "Bloombase is the long arc: enterprise data security built for endurance",
-    "dek": "Co-Founder & CEO of Bloombase since January 2012 — a multi-era infrastructure build embedding specialized security within global enterprise systems.",
+    "id": "stanford-appointment",
+    "phase": "Stanford",
+    "range": "1998-present",
+    "title": "Stanford faculty: building the microfluidics laboratory",
+    "dek": "Joined Stanford University in 1998, establishing the Stanford Microfluidics Laboratory and rising to Charles Lee Powell Foundation Professor.",
     "narrative": [
-      "Establishing headquarters in Redwood City placed Bloombase directly within Silicon Valley's infrastructure ecosystem — a strategic alignment with cloud ecosystems, hardware security module vendors, and enterprise buyers who demanded uncompromising platform trust.",
-      "In this highly unforgiving enterprise security market, Bloombase laid the groundwork for decades of architectural relevance."
+      "Joining Stanford's Mechanical Engineering department in 1998 marked the beginning of a transformative academic career. Santiago established the Stanford Microfluidics Laboratory, creating a research program that would span decades and train generations of engineers.",
+      "The appointment to the Charles Lee Powell Foundation endowed professorship recognized sustained excellence in research, teaching, and leadership within Stanford's engineering community."
     ],
     "proofPoints": [
-      "2013 releases across OpenStack, EMC, and VMware demonstrate early and deep platform integration.",
-      "2012 appearances in the Open Virtualization Alliance show early positioning in cloud security.",
-      "2014 advisory board expansion highlights early strategic organizational growth."
+      "Frederick Emmons Terman Fellow Award upon joining Stanford (1998)",
+      "Established Stanford Microfluidics Laboratory as founding director",
+      "Charles Lee Powell Foundation endowed professorship"
     ],
-    "locationId": "redwood-city",
-    "locationIds": ["redwood-city"],
-    "mapCaption": "Bloombase founded in Redwood City, Silicon Valley.",
+    "locationId": "stanford",
+    "locationIds": ["stanford"],
+    "mapCaption": "Stanford University appointment and laboratory establishment.",
     "mapCamera": {
-      "center": [
-        -122.2364,
-        37.4852
-      ],
+      "center": [-122.1697, 37.4275],
       "zoom": 10.5,
       "pitch": 28,
       "bearing": -22
     },
-    "sources": [
-      "ova-2012",
-      "bloombase-about",
-      "bloombase-offices",
-      "slayton-2014",
-      "bloombase-news-index",
-      "openstack-2013",
-      "emc-2013",
-      "vmware-2013",
-      "dossier",
-      "timeline-v2"
-    ],
+    "sources": ["dossier", "timeline-v2"],
     "evidenceProfile": {
       "stanceLabel": "Evidence stance",
-      "stance": "Company-spine chapter",
+      "stance": "Academic career spine chapter",
       "strengthLabel": "Source mix",
-      "strength": "Primary company URLs now support a stronger founding and geography layer",
+      "strength": "University affiliation and laboratory founding",
       "artifactLabel": "Artifact readiness",
-      "artifact": "Source cards ready"
+      "artifact": "Faculty appointment chapter"
     }
   },
   {
-    "id": "enterprise-validation",
-    "phase": "Expand",
-    "range": "2014–2020",
-    "title": "Validation accumulates through alliances, certifications, and interoperability",
-    "dek": "A dense network of certifications and partnerships established Bloombase as a universally trusted layer in enterprise infrastructure.",
+    "id": "early-recognition",
+    "phase": "Recognition",
+    "range": "2001-2004",
+    "title": "Early career recognition and federal support",
+    "dek": "Collegiate Inventors Award (2001), NSF CAREER Award (2003), and Presidential Early Career Award (2004) validated emerging research excellence.",
     "narrative": [
-      "From 2014 to 2020, Bloombase methodically expanded its interoperability map. Announcements cataloged deep technical integration with Dell, Hitachi, HP ESKM, Thales ASAP, IBM, VMware Cloud on AWS, and Microsoft Azure Marketplace.",
-      "These milestones represent more than a collection of alliances; they show a clear accumulation pattern of trust. Across changing infrastructure regimes, Bloombase consistently positioned itself at the nexus where data security and performance are non-negotiable."
+      "The early 2000s brought a cascade of recognition for Santiago's research contributions. The Collegiate Inventors Award from the National Inventors Hall of Fame (2001) acknowledged innovative work with immediate practical impact.",
+      "The NSF CAREER Award (2003) and Presidential Early Career Award for Scientists and Engineers (PECASE, 2004) represented the highest federal recognition for early-career researchers, confirming Santiago's trajectory toward national prominence."
     ],
     "proofPoints": [
-      "2013-2014: Early validation established with OpenStack, EMC, VMware, Dell, and Hitachi.",
-      "2015-2017: Certifications with HP, Thales, Ultra Electronics, HPE, IBM, ATTO, and Huawei deepen custody and storage trust.",
-      "2018-2020: Public cloud scale confirmed through VMware Cloud on AWS and Microsoft Azure Marketplace.",
-      "Hardware security module (HSM) integrations widened aggressively through Marvell, nCipher, and Futurex."
+      "2001: Collegiate Inventors Award, National Inventors Hall of Fame",
+      "2003: NSF CAREER Award",
+      "2004: Presidential Early Career Award for Scientists and Engineers (PECASE)"
     ],
-    "locationId": "redwood-city",
-    "locationIds": ["redwood-city"],
-    "mapCaption": "Enterprise validation years based in Silicon Valley.",
+    "locationId": "stanford",
+    "locationIds": ["stanford"],
+    "mapCaption": "Early career awards established national research prominence.",
     "mapCamera": {
-      "center": [
-        -122.2364,
-        37.4852
-      ],
+      "center": [-122.1697, 37.4275],
       "zoom": 9.0,
       "pitch": 44,
       "bearing": -8
     },
-    "sources": [
-      "openstack-2013",
-      "emc-2013",
-      "vmware-2013",
-      "vmware-2014",
-      "hitachi-2014",
-      "hp-2015",
-      "thales-2015",
-      "hpe-2015",
-      "ibm-2017",
-      "huawei-2017",
-      "vmware-aws-2018",
-      "azure-2019",
-      "marvell-2019",
-      "ncipher-2019",
-      "futurex-2020"
-    ],
+    "sources": ["dossier"],
     "evidenceProfile": {
       "stanceLabel": "Evidence stance",
-      "stance": "Strongest historical chapter",
+      "stance": "Award-documented chapter",
       "strengthLabel": "Source mix",
-      "strength": "Dense first-party alliance and certification trail",
+      "strength": "Federal and national recognition trail",
       "artifactLabel": "Artifact readiness",
-      "artifact": "Ready for richer document-style artifact cards"
+      "artifact": "Early recognition chapter"
     }
   },
   {
-    "id": "geographic-expansion",
-    "phase": "Vancouver",
-    "range": "2018 onward",
-    "title": "The geography widens: strategic expansion to Canada",
-    "dek": "Expansion beyond Silicon Valley emphasized global talent, advanced cryptography capability, and strategic ecosystem scale.",
+    "id": "fellowship-elevation",
+    "phase": "Fellowships",
+    "range": "2010-2016",
+    "title": "Professional society fellowships mark sustained excellence",
+    "dek": "Fellow of American Physical Society (2010), ASME (2012), and AIMBE (2016) recognized sustained research impact.",
     "narrative": [
-      "Recognizing the increasing global demand for rigorous data protection, Bloombase strategically expanded its operations into Canada. As detailed in a 2018 Launch Academy profile, Vancouver provided a strong talent pool, advanced cryptography resources, and a supportive technology ecosystem.",
-      "This geographic shift marked a transition from a Silicon Valley-centric operation to a mature, international engineering organization structured for scale."
+      "Election to fellowship in major professional societies represents peer recognition of sustained, exceptional contributions. Santiago's elevation to Fellow of the American Physical Society (2010) acknowledged fundamental contributions to fluid mechanics and transport phenomena.",
+      "Subsequent fellowships in the American Society of Mechanical Engineering (2012) and American Institute for Medical and Biological Engineering (2016) reflected the breadth of his impact across physics, engineering, and biomedical applications."
     ],
     "proofPoints": [
-      "Vancouver office launch captured in 2018 Launch Academy profile."
+      "2010: Fellow, American Physical Society",
+      "2012: Fellow, American Society of Mechanical Engineering",
+      "2016: Fellow, American Institute for Medical and Biological Engineering"
     ],
-    "locationId": "vancouver",
-    "locationIds": ["vancouver"],
-    "mapCaption": "Bloombase expands to Vancouver for cryptography talent and ecosystem scale.",
+    "locationId": "stanford",
+    "locationIds": ["stanford"],
+    "mapCaption": "Professional society fellowships spanning physics, engineering, and biomedical fields.",
     "mapCamera": {
-      "center": [
-        -123.1207,
-        49.2827
-      ],
-      "zoom": 5.25,
+      "center": [-122.1697, 37.4275],
+      "zoom": 10.5,
       "pitch": 32,
       "bearing": 14
     },
-    "sources": [
-      "launch-academy",
-      "timeline-v2"
-    ],
+    "sources": ["dossier"],
     "evidenceProfile": {
       "stanceLabel": "Evidence stance",
-      "stance": "Selective expansion chapter",
+      "stance": "Fellowship-documented chapter",
       "strengthLabel": "Source mix",
-      "strength": "One strong public expansion profile plus chronology support",
+      "strength": "Professional society recognition trail",
       "artifactLabel": "Artifact readiness",
-      "artifact": "Geographic expansion chapter"
+      "artifact": "Fellowship elevation chapter"
     }
   },
   {
-    "id": "shenzhen-academic",
-    "phase": "Shenzhen",
-    "range": "2018–2023",
-    "title": "Parallel academic chapter: Founding Dean and Institute co-founder in Shenzhen",
-    "dek": "Alongside leading Bloombase, Sean Xiang built an academic track in Shenzhen — Founding Dean of the School of Artificial Intelligence at Shenzhen Technology University, then Chair Professor and Co-founder at the X-Institute of Shenzhen.",
+    "id": "leadership-roles",
+    "phase": "Leadership",
+    "range": "2020-present",
+    "title": "Academic leadership and editorial influence",
+    "dek": "Vice Chair of Mechanical Engineering (2020-present) and Editor-in-Chief of Cambridge journal Flow demonstrate institutional and scholarly leadership.",
     "narrative": [
-      "Both roles were part-time and ran in parallel with his CEO duties at Bloombase. This parallel academic arc reflects the same technical thesis: that AI-era infrastructure demands deep cryptographic and security foundations."
+      "Santiago's appointment as Vice Chair of Stanford's Mechanical Engineering Department (2020) formalized his role in shaping one of the world's premier engineering programs. This administrative leadership complemented decades of research and teaching excellence.",
+      "As Editor-in-Chief of the Cambridge University Press journal Flow, Santiago shapes the discourse in fluid mechanics and related fields, influencing research directions across the international community."
     ],
-    "proofPoints": [],
-    "locationId": "shenzhen",
-    "locationIds": ["shenzhen"],
-    "mapCaption": "Shenzhen academic chapter: Founding Dean of AI at SZTech, then X-Institute co-founder.",
+    "proofPoints": [
+      "Vice Chair, Mechanical Engineering Department, Stanford (2020-present)",
+      "Editor-in-Chief, Flow (Cambridge University Press)"
+    ],
+    "locationId": "stanford",
+    "locationIds": ["stanford"],
+    "mapCaption": "Academic leadership at Stanford and editorial influence through Cambridge journal.",
     "mapCamera": {
-      "center": [
-        114.0579,
-        22.5431
-      ],
+      "center": [-122.1697, 37.4275],
       "zoom": 5.5,
       "pitch": 28,
       "bearing": 0
     },
-    "sources": [
-      "dossier"
-    ],
+    "sources": ["dossier"],
     "evidenceProfile": {
       "stanceLabel": "Evidence stance",
-      "stance": "LinkedIn-confirmed institutional roles",
+      "stance": "Leadership-documented chapter",
       "strengthLabel": "Source mix",
-      "strength": "Direct LinkedIn profile data",
+      "strength": "Administrative and editorial appointments",
       "artifactLabel": "Artifact readiness",
-      "artifact": "Shenzhen academic chapter"
+      "artifact": "Leadership chapter"
     }
   },
   {
-    "id": "ai-era",
-    "phase": "AI era",
-    "range": "2023–now",
-    "title": "The current chapter is not nostalgia — it is AI infrastructure",
-    "dek": "Rebuilding enterprise security primitives for the AI-infrastructure era: post-quantum cryptography, NVIDIA accelerators, and a new standards-layer presence.",
+    "id": "academy-membership",
+    "phase": "Academies",
+    "range": "2021-2026",
+    "title": "Election to national academies: the highest peer recognition",
+    "dek": "Member of National Academy of Inventors (2022), American Academy of Arts & Sciences (2022), and National Academy of Engineering (2026).",
     "narrative": [
-      "In 2023, Bloombase rebuilt data-at-rest encryption to run natively on NVIDIA DPUs and GPUs — a technical argument that security must operate at the accelerator level to avoid becoming a bottleneck in AI data pipelines. At NVIDIA GTC 2024, Sean Xiang served as a panelist on AI-era cyber defense alongside executives from NVIDIA, Qrypt, and Reality Defender; the Bloombase booth demonstrated post-quantum cryptography (PQC) encryption powered by NVIDIA GPU, DPU, and Morpheus AI.",
-      "In 2025, a strategic alliance with Utimaco delivered integrated NIST FIPS 140-2 Level 3 certified HSM key protection and OASIS KMIP-compliant key management for AI-era workloads. Bloombase also joined the PKI Consortium in November 2024, deepening its participation in cryptographic standards infrastructure."
+      "Election to the National Academy of Inventors (2022) recognized Santiago's exceptional record of patented innovations with real-world impact — 60 issued patents, 27 currently licensed, spanning microfluidics, diagnostics, and water treatment technologies.",
+      "Membership in the American Academy of Arts and Sciences (2022) and National Academy of Engineering (2026) represent the pinnacle of academic recognition, reserved for individuals whose contributions have fundamentally advanced their fields. These honors confirm Santiago's standing among the nation's most distinguished engineers and scientists."
     ],
     "proofPoints": [
-      "2024: Entrust partnership integrating StoreSafe with nShield Connect HSMs."
+      "2021: AES Lifetime Achievement Award",
+      "2022: Member, National Academy of Inventors",
+      "2022: Member, American Academy of Arts and Sciences",
+      "2026: Member, National Academy of Engineering"
     ],
-    "locationId": "global-ai",
-    "locationIds": ["global-ai"],
-    "mapCaption": "Bloombase integrates with NVIDIA, Utimaco, and global cloud infrastructure.",
+    "locationId": "stanford",
+    "locationIds": ["stanford"],
+    "mapCaption": "National academy memberships represent the highest peer recognition in American science and engineering.",
     "mapCamera": {
-      "center": [
-        8,
-        24
-      ],
+      "center": [-122.1697, 37.4275],
       "zoom": 1.35,
       "pitch": 10,
       "bearing": 0
     },
-    "sources": [
-      "nvidia-2023",
-      "utimaco-2025",
-      "dossier"
-    ],
+    "sources": ["dossier"],
     "evidenceProfile": {
       "stanceLabel": "Evidence stance",
-      "stance": "Present-tense relevance chapter",
+      "stance": "Academy-documented chapter",
       "strengthLabel": "Source mix",
-      "strength": "Direct Bloombase sources with a clear AI-era frame",
+      "strength": "National academy elections",
       "artifactLabel": "Artifact readiness",
-      "artifact": "Best candidate for stronger media / announcement treatment"
+      "artifact": "Highest recognition chapter"
+    }
+  },
+  {
+    "id": "research-impact",
+    "phase": "Impact",
+    "range": "1998-present",
+    "title": "Research productivity and scholarly impact",
+    "dek": "220+ journal papers, 250+ conference papers, h-index of 91, and 1500+ annual citations demonstrate sustained research excellence.",
+    "narrative": [
+      "Santiago's research productivity spans nearly three decades at Stanford. With 220+ journal publications and 250+ conference papers, his work has shaped multiple subfields within microfluidics, electrokinetics, and microscale transport phenomena.",
+      "An h-index of 91 and more than 1500 citations per year reflect sustained influence on the research community. His work on DNA/RNA detection, CRISPR diagnostics, and capacitive deionization continues to generate new applications and inspire follow-on research."
+    ],
+    "proofPoints": [
+      "220+ journal papers",
+      "250+ conference papers",
+      "60 issued patents (27 currently licensed)",
+      "h-index: 91",
+      "1500+ citations per year"
+    ],
+    "locationId": "stanford",
+    "locationIds": ["stanford"],
+    "mapCaption": "Research impact measured through publications, patents, and citations.",
+    "mapCamera": {
+      "center": [-122.1697, 37.4275],
+      "zoom": 8,
+      "pitch": 24,
+      "bearing": 0
+    },
+    "sources": ["dossier"],
+    "evidenceProfile": {
+      "stanceLabel": "Evidence stance",
+      "stance": "Metrics-documented chapter",
+      "strengthLabel": "Source mix",
+      "strength": "Publication and citation metrics",
+      "artifactLabel": "Artifact readiness",
+      "artifact": "Research impact chapter"
+    }
+  },
+  {
+    "id": "student-legacy",
+    "phase": "Mentorship",
+    "range": "1998-present",
+    "title": "Training the next generation: 32 PhD students and postdocs",
+    "dek": "24 former advisees now hold faculty positions at major universities, extending Santiago's intellectual lineage.",
+    "narrative": [
+      "Santiago has mentored 32 PhD students and postdoctoral researchers over his Stanford career. This mentorship represents perhaps his most enduring contribution — training the next generation of researchers who will carry forward and extend his scientific legacy.",
+      "Of his 32 former advisees, 24 now hold faculty positions at major universities worldwide, 8 work in corporate research labs, and 4 have founded microfluidic startup companies. This academic family tree demonstrates the multiplier effect of excellent mentorship."
+    ],
+    "proofPoints": [
+      "32 former PhD students and postdocs",
+      "24 former advisees are now professors at major universities",
+      "8 in corporate research laboratories",
+      "4 founded microfluidic startup companies"
+    ],
+    "locationId": "stanford",
+    "locationIds": ["stanford"],
+    "mapCaption": "Student mentorship and academic lineage extending across universities and industries.",
+    "mapCamera": {
+      "center": [-122.1697, 37.4275],
+      "zoom": 2.5,
+      "pitch": 18,
+      "bearing": 0
+    },
+    "sources": ["dossier"],
+    "evidenceProfile": {
+      "stanceLabel": "Evidence stance",
+      "stance": "Mentorship-documented chapter",
+      "strengthLabel": "Source mix",
+      "strength": "Student placement and career outcomes",
+      "artifactLabel": "Artifact readiness",
+      "artifact": "Mentorship legacy chapter"
+    }
+  },
+  {
+    "id": "leading-world-class",
+    "phase": "Future",
+    "range": "2026-forward",
+    "title": "Leading world-class research into the future",
+    "dek": "Continuing to advance microfluidics, electrokinetics, and diagnostic technologies while shaping the next generation of engineering leaders.",
+    "narrative": [
+      "As a member of the National Academy of Engineering and Vice Chair of Stanford's Mechanical Engineering Department, Santiago continues to lead cutting-edge research while mentoring the next generation of engineers and scientists.",
+      "His ongoing work in CRISPR diagnostics, water treatment technologies, and microscale transport phenomena positions his laboratory at the forefront of addressing global challenges in health, environment, and sustainability."
+    ],
+    "proofPoints": [
+      "Active research program in microfluidics and diagnostics",
+      "Leadership role in Stanford Mechanical Engineering",
+      "Ongoing mentorship of graduate students and postdocs",
+      "Continued innovation in water treatment and diagnostic technologies"
+    ],
+    "locationId": "stanford",
+    "locationIds": ["stanford"],
+    "mapCaption": "Continuing leadership in research, education, and innovation at Stanford University.",
+    "mapCamera": {
+      "center": [-122.1697, 37.4275],
+      "zoom": 9.5,
+      "pitch": 35,
+      "bearing": 15
+    },
+    "sources": ["dossier", "stanford-profile"],
+    "evidenceProfile": {
+      "stanceLabel": "Evidence stance",
+      "stance": "Forward-looking chapter",
+      "strengthLabel": "Source mix",
+      "strength": "Current position and ongoing research",
+      "artifactLabel": "Artifact readiness",
+      "artifact": "Future direction chapter"
     }
   }
 ]
