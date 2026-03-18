@@ -1,518 +1,291 @@
 {
   "title": {
     "text": {
-      "headline": "Sean Xiang - Founder Chronicle",
-      "text": "A simple MVP timeline of study, research, company building, partnerships, and AI-era milestones."
+      "headline": "Juan Santiago - Professor Chronicle",
+      "text": "An academic journey from undergraduate studies through distinguished professorship, spanning research excellence, innovation, mentorship, and national recognition."
     }
   },
   "events": [
     {
       "start_date": {
-        "year": "2012",
-        "month": "12",
-        "day": "12"
-      },
-      "text": {
-        "headline": "Open Virtualization Alliance resource",
-        "text": "An external ecosystem resource captures Bloombase in secure virtualization discourse before the stronger 2013 first-party release trail begins."
-      },
-      "sourceIds": [
-        "ova-2012"
-      ],
-      "id": "ova-overview-2012",
-      "chapterId": "founding-bloombase"
-    },
-    {
-      "start_date": {
-        "year": "2013",
-        "month": "2",
-        "day": "18"
-      },
-      "text": {
-        "headline": "OpenStack Community",
-        "text": "Bloombase joins OpenStack, with Sean Xiang publicly framed as co-founder and CEO and cloud-security advocate."
-      },
-      "sourceIds": [
-        "openstack-2013"
-      ],
-      "id": "openstack-community",
-      "chapterId": "founding-bloombase"
-    },
-    {
-      "start_date": {
-        "year": "2013",
-        "month": "5",
-        "day": "8"
-      },
-      "text": {
-        "headline": "EMC Technology Partner Program",
-        "text": "Bloombase announces EMC interoperability across VNX, Atmos, and NetWorker as enterprise validation starts to stack up."
-      },
-      "sourceIds": [
-        "emc-2013"
-      ],
-      "id": "emc-technology-partner",
-      "chapterId": "founding-bloombase"
-    },
-    {
-      "start_date": {
-        "year": "2013",
-        "month": "8",
-        "day": "30"
-      },
-      "text": {
-        "headline": "VMware Technology Alliance",
-        "text": "Bloombase joins VMware's TAP program, making virtualization and cloud trust part of the public company narrative."
-      },
-      "sourceIds": [
-        "vmware-2013"
-      ],
-      "id": "vmware-technology-alliance-2013",
-      "chapterId": "founding-bloombase"
-    },
-    {
-      "start_date": {
-        "year": "2014",
-        "month": "1",
-        "day": "22"
-      },
-      "text": {
-        "headline": "Dell Technology Partner Certification",
-        "text": "Bloombase achieves Dell Technology Partner certification for next-generation data-at-rest encryption security."
-      },
-      "sourceIds": [
-        "vmware-2014"
-      ],
-      "id": "vmware-technology-alliance",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2014",
-        "month": "10",
-        "day": "8"
-      },
-      "text": {
-        "headline": "Bloombase adds Gregory W. Slayton to its advisory board",
-        "text": "A direct company release shows the founder chapter maturing into an international-growth and strategic-guidance story, not just a run of product interoperability milestones."
-      },
-      "sourceIds": [
-        "slayton-2014"
-      ],
-      "id": "slayton-advisory-board-2014",
-      "chapterId": "founding-bloombase"
-    },
-    {
-      "start_date": {
-        "year": "2014",
-        "month": "11",
-        "day": "18"
-      },
-      "text": {
-        "headline": "Hitachi Alliance",
-        "text": "Bloombase joins Hitachi Data Systems' Technology Alliance Program."
-      },
-      "sourceIds": [
-        "hitachi-2014"
-      ],
-      "id": "hitachi-alliance",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2015",
-        "month": "9",
-        "day": "1"
-      },
-      "text": {
-        "headline": "HP ESKM Interoperability",
-        "text": "StoreSafe certified interoperable with HP Enterprise Secure Key Manager."
-      },
-      "sourceIds": [
-        "hp-2015"
-      ],
-      "id": "hp-eskm-interoperability",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2015",
-        "month": "11",
-        "day": "2"
-      },
-      "text": {
-        "headline": "Thales ASAP Alliance",
-        "text": "Bloombase joins Thales ASAP alliance."
-      },
-      "sourceIds": [
-        "thales-2015"
-      ],
-      "id": "thales-asap-alliance",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2015",
-        "month": "12",
-        "day": "3"
-      },
-      "text": {
-        "headline": "HPE Helion Ready / ArcSight",
-        "text": "Cloud and security certification milestone."
-      },
-      "sourceIds": [
-        "hpe-2015"
-      ],
-      "id": "hpe-helion-arcsight",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2016",
-        "month": "6",
-        "day": "13"
-      },
-      "text": {
-        "headline": "Ultra Electronics AEP Keyper HSM interoperability",
-        "text": "Bloombase expands the trust-layer story with a direct HSM interoperability release focused on hardened key storage and large-scale enterprise security."
-      },
-      "sourceIds": [
-        "ultra-2016"
-      ],
-      "id": "ultra-aep-keyper",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2017",
-        "month": "3",
-        "day": "20"
-      },
-      "text": {
-        "headline": "IBM Validation",
-        "text": "StoreSafe receives IBM Ready for Security Intelligence validation."
-      },
-      "sourceIds": [
-        "ibm-2017"
-      ],
-      "id": "ibm-validation",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2017",
-        "month": "7",
-        "day": "17"
-      },
-      "text": {
-        "headline": "ATTO interoperability certification",
-        "text": "Bloombase certifies StoreSafe with ATTO storage-networking hardware, extending the validation arc into SAN, NAS, and high-speed connectivity infrastructure."
-      },
-      "sourceIds": [
-        "atto-2017"
-      ],
-      "id": "atto-certification",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2017",
-        "month": "8",
-        "day": "1"
-      },
-      "text": {
-        "headline": "Huawei OceanStor V3 interoperability certification",
-        "text": "Bloombase certifies StoreSafe with Huawei OceanStor V3, extending the validation trail into unified storage infrastructure and telecom / MSP deployment contexts."
-      },
-      "sourceIds": [
-        "huawei-2017"
-      ],
-      "id": "huawei-oceanstor-2017",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2018",
-        "month": "7",
-        "day": "9"
-      },
-      "text": {
-        "headline": "VMware Cloud on AWS",
-        "text": "StoreSafe for VMware Cloud on AWS announced."
-      },
-      "sourceIds": [
-        "vmware-aws-2018"
-      ],
-      "id": "vmware-cloud-on-aws",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2018",
-        "month": "8",
-        "day": "27"
-      },
-      "text": {
-        "headline": "Canada Expansion Story",
-        "text": "Launch Academy / Maple public expansion chapter."
-      },
-      "sourceIds": [
-        "launch-academy"
-      ],
-      "id": "canada-expansion-story",
-      "chapterId": "geographic-expansion"
-    },
-    {
-      "start_date": {
-        "year": "2019",
-        "month": "1",
-        "day": "22"
-      },
-      "text": {
-        "headline": "Azure Marketplace",
-        "text": "Bloombase StoreSafe available in Microsoft Azure Marketplace."
-      },
-      "sourceIds": [
-        "azure-2019"
-      ],
-      "id": "azure-marketplace",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2019",
-        "month": "3",
-        "day": "5"
-      },
-      "text": {
-        "headline": "Marvell LiquidSecurity HSM partnership",
-        "text": "A partner-hosted Marvell release extends the 2019 enterprise trust layer into network HSM infrastructure between the Azure and nCipher milestones."
-      },
-      "sourceIds": [
-        "marvell-2019"
-      ],
-      "id": "marvell-liquidsecurity-2019",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2019",
-        "month": "10",
-        "day": "21"
-      },
-      "text": {
-        "headline": "nCipher Collaboration",
-        "text": "Cloud data-at-rest protection collaboration."
-      },
-      "sourceIds": [
-        "ncipher-2019"
-      ],
-      "id": "ncipher-collaboration",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2020",
-        "month": "2",
-        "day": "18"
-      },
-      "text": {
-        "headline": "Futurex Collaboration",
-        "text": "Security partnership milestone."
-      },
-      "sourceIds": [
-        "futurex-2020"
-      ],
-      "id": "futurex-collaboration",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2023"
-      },
-      "text": {
-        "headline": "NVIDIA DPU / GPU Era",
-        "text": "Rebuilding Bloombase data-at-rest security with NVIDIA DPUs and GPUs."
-      },
-      "sourceIds": [
-        "nvidia-2023"
-      ],
-      "id": "nvidia-dpu-gpu-era",
-      "chapterId": "ai-era"
-    },
-    {
-      "start_date": {
-        "year": "2024"
-      },
-      "text": {
-        "headline": "Conference / Ecosystem Visibility",
-        "text": "RSA, GTC, MWC, CYBERSEC and broader public ecosystem presence."
-      },
-      "sourceIds": [
-        "dossier"
-      ],
-      "id": "conference-ecosystem-visibility",
-      "chapterId": "ai-era"
-    },
-    {
-      "start_date": {
-        "year": "2025",
-        "month": "4",
-        "day": "29"
-      },
-      "text": {
-        "headline": "Utimaco Alliance",
-        "text": "Alliance focused on AI-era data security solutions."
-      },
-      "sourceIds": [
-        "utimaco-2025"
-      ],
-      "id": "utimaco-alliance",
-      "chapterId": "ai-era"
-    },
-    {
-      "start_date": {
-        "year": "1980"
-      },
-      "text": {
-        "headline": "Entering USTC",
-        "text": "Entered the University of Science and Technology of China in 1980, majoring in Physics."
-      },
-      "sourceIds": [
-        "dossier",
-        "timeline-v2"
-      ],
-      "id": "entering-ustc",
-      "chapterId": "hefei-ustc",
-      "sortBucket": "formation"
-    },
-    {
-      "text": {
-        "headline": "Born in Shanxi",
-        "text": "Born in Shanxi, marking the beginning of the journey."
-      },
-      "sourceIds": [
-        "dossier",
-        "timeline-v2"
-      ],
-      "id": "born-in-shanxi",
-      "chapterId": "shanxi-birth",
-      "dateLabel": "Undated - opening frame",
-      "undated": true,
-      "sortBucket": "formation"
-    },
-    {
-      "start_date": {
-        "year": "1996"
+        "year": "1986"
       },
       "end_date": {
+        "year": "1990"
+      },
+      "text": {
+        "headline": "B.S. in Mechanical Engineering, University of Florida",
+        "text": "Undergraduate foundation in mechanical engineering at University of Florida."
+      },
+      "sourceIds": ["dossier", "timeline-v2"],
+      "id": "florida-undergraduate",
+      "chapterId": "florida-undergraduate",
+      "sortBucket": "formation"
+    },
+    {
+      "start_date": {
+        "year": "1990"
+      },
+      "end_date": {
+        "year": "1992"
+      },
+      "text": {
+        "headline": "M.S. in Mechanical Engineering, UIUC",
+        "text": "Master's degree from University of Illinois at Urbana-Champaign, beginning graduate formation."
+      },
+      "sourceIds": ["dossier"],
+      "id": "uiuc-masters",
+      "chapterId": "uiuc-graduate",
+      "sortBucket": "formation"
+    },
+    {
+      "start_date": {
+        "year": "1992"
+      },
+      "end_date": {
+        "year": "1995"
+      },
+      "text": {
+        "headline": "Ph.D. in Mechanical Engineering, UIUC",
+        "text": "Doctoral research at University of Illinois establishing foundation for microfluidics career."
+      },
+      "sourceIds": ["dossier", "timeline-v2"],
+      "id": "uiuc-doctorate",
+      "chapterId": "uiuc-graduate",
+      "sortBucket": "formation"
+    },
+    {
+      "start_date": {
         "year": "1997"
       },
-      "text": {
-        "headline": "Research Associate, HKUST",
-        "text": "Research Associate at Hong Kong University of Science and Technology, 1996–1997, following the CUHK doctorate."
+      "end_date": {
+        "year": "1998"
       },
-      "sourceIds": [
-        "dossier"
-      ],
-      "id": "hkust-research-associate",
-      "chapterId": "research-formation",
-      "sortBucket": "research"
+      "text": {
+        "headline": "Ford Foundation Postdoctoral Fellow, Beckman Institute UIUC",
+        "text": "Postdoctoral research as Ford Foundation Fellow and Research Scientist at UIUC's Beckman Institute for Advanced Science and Technology."
+      },
+      "sourceIds": ["dossier"],
+      "id": "ford-postdoc",
+      "chapterId": "postdoc-beckman",
+      "sortBucket": "postdoc"
     },
     {
       "start_date": {
-        "year": "1997",
-        "month": "8"
-      },
-      "end_date": {
-        "year": "1999",
-        "month": "12"
+        "year": "1998"
       },
       "text": {
-        "headline": "Scientist, Beckman Laser Institute, UC Irvine",
-        "text": "Scientist at the Beckman Laser Institute & Medical Clinic, UC Irvine, Aug 1997 – Dec 1999."
+        "headline": "Joined Stanford University faculty",
+        "text": "Faculty appointment in Mechanical Engineering at Stanford University, establishing the Stanford Microfluidics Laboratory."
       },
-      "sourceIds": [
-        "launch-academy",
-        "dossier"
-      ],
-      "id": "beckman-uc-irvine",
-      "chapterId": "california-transition",
-      "sortBucket": "research"
+      "sourceIds": ["dossier", "stanford-profile"],
+      "id": "stanford-appointment",
+      "chapterId": "stanford-appointment",
+      "sortBucket": "stanford"
+    },
+    {
+      "start_date": {
+        "year": "1998"
+      },
+      "text": {
+        "headline": "Frederick Emmons Terman Fellow Award",
+        "text": "Terman Fellowship awarded upon joining Stanford, recognizing exceptional promise."
+      },
+      "sourceIds": ["dossier"],
+      "id": "terman-fellowship",
+      "chapterId": "stanford-appointment",
+      "sortBucket": "stanford"
+    },
+    {
+      "start_date": {
+        "year": "2001"
+      },
+      "text": {
+        "headline": "Collegiate Inventors Award",
+        "text": "National Inventors Hall of Fame Collegiate Inventors Award recognizing early innovative work."
+      },
+      "sourceIds": ["dossier"],
+      "id": "collegiate-inventors",
+      "chapterId": "early-recognition",
+      "sortBucket": "recognition"
+    },
+    {
+      "start_date": {
+        "year": "2003"
+      },
+      "text": {
+        "headline": "NSF CAREER Award",
+        "text": "National Science Foundation CAREER Award, the NSF's most prestigious award for early-career faculty."
+      },
+      "sourceIds": ["dossier", "nsf-career"],
+      "id": "nsf-career-award",
+      "chapterId": "early-recognition",
+      "sortBucket": "recognition"
+    },
+    {
+      "start_date": {
+        "year": "2004"
+      },
+      "text": {
+        "headline": "Presidential Early Career Award (PECASE)",
+        "text": "Presidential Early Career Award for Scientists and Engineers, the highest federal honor for early-career researchers."
+      },
+      "sourceIds": ["dossier", "pecase-award"],
+      "id": "pecase-award",
+      "chapterId": "early-recognition",
+      "sortBucket": "recognition"
+    },
+    {
+      "start_date": {
+        "year": "2010"
+      },
+      "text": {
+        "headline": "Fellow, American Physical Society",
+        "text": "Elected Fellow of the American Physical Society for contributions to fluid mechanics and transport phenomena."
+      },
+      "sourceIds": ["dossier"],
+      "id": "aps-fellow",
+      "chapterId": "fellowship-elevation",
+      "sortBucket": "fellowships"
+    },
+    {
+      "start_date": {
+        "year": "2012"
+      },
+      "text": {
+        "headline": "Fellow, American Society of Mechanical Engineering",
+        "text": "Elected Fellow of ASME for exceptional engineering contributions and leadership."
+      },
+      "sourceIds": ["dossier"],
+      "id": "asme-fellow",
+      "chapterId": "fellowship-elevation",
+      "sortBucket": "fellowships"
+    },
+    {
+      "start_date": {
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Fellow, American Institute for Medical and Biological Engineering",
+        "text": "Elected Fellow of AIMBE for contributions to biomedical engineering and medical applications."
+      },
+      "sourceIds": ["dossier"],
+      "id": "aimbe-fellow",
+      "chapterId": "fellowship-elevation",
+      "sortBucket": "fellowships"
+    },
+    {
+      "start_date": {
+        "year": "2020"
+      },
+      "text": {
+        "headline": "Vice Chair, Mechanical Engineering Department",
+        "text": "Appointed Vice Chair of Stanford's Mechanical Engineering Department, formalizing institutional leadership role."
+      },
+      "sourceIds": ["dossier", "stanford-profile"],
+      "id": "vice-chair-appointment",
+      "chapterId": "leadership-roles",
+      "sortBucket": "leadership"
+    },
+    {
+      "start_date": {
+        "year": "2021"
+      },
+      "text": {
+        "headline": "AES Lifetime Achievement Award",
+        "text": "Analytical and Environmental Sciences Lifetime Achievement Award recognizing career-long contributions."
+      },
+      "sourceIds": ["dossier"],
+      "id": "aes-lifetime",
+      "chapterId": "academy-membership",
+      "sortBucket": "academies"
+    },
+    {
+      "start_date": {
+        "year": "2022"
+      },
+      "text": {
+        "headline": "Member, National Academy of Inventors",
+        "text": "Elected to NAI for exceptional innovation record: 60 issued patents, 27 currently licensed."
+      },
+      "sourceIds": ["dossier", "nai-election"],
+      "id": "nai-member",
+      "chapterId": "academy-membership",
+      "sortBucket": "academies"
+    },
+    {
+      "start_date": {
+        "year": "2022"
+      },
+      "text": {
+        "headline": "Member, American Academy of Arts and Sciences",
+        "text": "Elected to AAAS, one of the nation's oldest and most prestigious honorary societies."
+      },
+      "sourceIds": ["dossier", "aaas-election"],
+      "id": "aaas-member",
+      "chapterId": "academy-membership",
+      "sortBucket": "academies"
+    },
+    {
+      "start_date": {
+        "year": "2026"
+      },
+      "text": {
+        "headline": "Member, National Academy of Engineering",
+        "text": "Elected to NAE, the highest professional distinction for engineers, recognizing transformative contributions to microfluidics and transport phenomena."
+      },
+      "sourceIds": ["dossier", "nae-election"],
+      "id": "nae-member",
+      "chapterId": "academy-membership",
+      "sortBucket": "academies"
     },
     {
       "text": {
-        "headline": "CUHK PhD",
-        "text": "Advanced training in Electrical and Electronic Engineering at The Chinese University of Hong Kong."
+        "headline": "Editor-in-Chief, Flow (Cambridge University Press)",
+        "text": "Serves as Editor-in-Chief of Cambridge journal Flow, shaping discourse in fluid mechanics internationally."
       },
-      "sourceIds": [
-        "launch-academy",
-        "dossier"
-      ],
-      "id": "cuhk-phd",
-      "chapterId": "research-formation",
-      "dateLabel": "Undated graduate-era anchor",
+      "sourceIds": ["dossier", "flow-journal"],
+      "id": "flow-editor",
+      "chapterId": "leadership-roles",
+      "dateLabel": "Present - Editorial leadership",
       "undated": true,
-      "sortBucket": "research"
+      "sortBucket": "leadership"
     },
     {
-      "start_date": {
-        "year": "2012",
-        "month": "1"
-      },
       "text": {
-        "headline": "Bloombase co-founded",
-        "text": "Sean Xiang co-founds Bloombase in January 2012 and begins his tenure as CEO, building toward the 2013 public release trail."
+        "headline": "Research Impact: 220+ journal papers, h-index 91",
+        "text": "Sustained research productivity with 220+ journal papers, 250+ conference papers, h-index of 91, and 1500+ annual citations."
       },
-      "sourceIds": [
-        "bloombase-about",
-        "bloombase-offices",
-        "bloombase-news-index",
-        "dossier"
-      ],
-      "id": "bloombase-founded",
-      "chapterId": "founding-bloombase",
-      "sortBucket": "founding"
+      "sourceIds": ["dossier", "google-scholar"],
+      "id": "research-metrics",
+      "chapterId": "research-impact",
+      "dateLabel": "Career span - Research productivity",
+      "undated": true,
+      "sortBucket": "impact"
     },
     {
-      "start_date": {
-        "year": "2018",
-        "month": "1"
-      },
-      "end_date": {
-        "year": "2021",
-        "month": "6"
-      },
       "text": {
-        "headline": "Founding Dean, School of AI — Shenzhen Technology University",
-        "text": "Distinguished Professor and Founding Dean of the School of Artificial Intelligence at Shenzhen Technology University, January 2018 – June 2021."
+        "headline": "Innovation Record: 60 patents, 27 licensed",
+        "text": "60 issued patents with 27 currently licensed, spanning microfluidics, diagnostics, and water treatment technologies."
       },
-      "sourceIds": [
-        "dossier"
-      ],
-      "id": "sztech-founding-dean",
-      "chapterId": "shenzhen-academic",
-      "sortBucket": "shenzhen"
+      "sourceIds": ["dossier"],
+      "id": "patent-portfolio",
+      "chapterId": "research-impact",
+      "dateLabel": "Career span - Innovation impact",
+      "undated": true,
+      "sortBucket": "impact"
     },
     {
-      "start_date": {
-        "year": "2021",
-        "month": "6"
-      },
-      "end_date": {
-        "year": "2023",
-        "month": "12"
-      },
       "text": {
-        "headline": "Chair Professor & Executive President — X-Institute of Shenzhen",
-        "text": "Chair Professor, Co-founder, and Executive President at the X-Institute of Shenzhen, June 2021 – December 2023."
+        "headline": "Mentorship Legacy: 32 PhD students and postdocs",
+        "text": "Trained 32 PhD students and postdocs; 24 now faculty at major universities, 8 in corporate labs, 4 founded startups."
       },
-      "sourceIds": [
-        "dossier"
-      ],
-      "id": "x-institute-shenzhen",
-      "chapterId": "shenzhen-academic",
-      "sortBucket": "shenzhen"
+      "sourceIds": ["dossier"],
+      "id": "student-mentorship",
+      "chapterId": "student-legacy",
+      "dateLabel": "Career span - Academic lineage",
+      "undated": true,
+      "sortBucket": "mentorship"
     }
   ]
 }
