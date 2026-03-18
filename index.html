@@ -3105,8 +3105,8 @@
         (brief.sourceIds || []).map((sourceId) => sourcesById.get(sourceId)).filter(Boolean).forEach((source) => {
           const link = make('a', 'artifact-link', source.label);
           link.href = source.url;
-          link.target = source.url.startsWith('http') ? '_blank' : '_self';
-          if (source.url.startsWith('http')) link.rel = 'noreferrer';
+          link.target = source.url && source.url.startsWith('http') ? '_blank' : '_self';
+          if (source.url && source.url.startsWith('http')) link.rel = 'noreferrer';
           sourceRow.append(link);
         });
         if (sourceRow.children.length) card.append(sourceRow);
@@ -4283,8 +4283,8 @@
 
             const actions = make('div', 'public-record-actions');
             const sourceLink = make('a', 'public-record-action primary', 'Open source');
-            sourceLink.href = entry.url;
-            sourceLink.target = entry.url.startsWith('http') ? '_blank' : '_self';
+            sourceLink.href = entry.url || '#';
+            sourceLink.target = entry.url && entry.url.startsWith('http') ? '_blank' : '_self';
             if (sourceLink.target === '_blank') sourceLink.rel = 'noreferrer';
             actions.append(sourceLink);
 
@@ -5084,7 +5084,7 @@
               const link = make('a', 'timeline-source-pill', source.label);
               link.href = source.url;
               link.dataset.origin = source.publisherType || 'internal';
-              link.target = source.url.startsWith('http') ? '_blank' : '_self';
+              link.target = source.url && source.url.startsWith('http') ? '_blank' : '_self';
               if (link.target === '_blank') link.rel = 'noreferrer';
               sourceRow.append(link);
             });
