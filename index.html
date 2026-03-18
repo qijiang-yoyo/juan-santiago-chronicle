@@ -5484,6 +5484,14 @@
       renderArchiveCaptures(archiveCaptures, sourcesById);
       renderSources(sources, chapters, chaptersById, eventsByChapterId, artifactsByChapterId, sourceRoadmap);
       activateScrollSync(chapters, setActiveLocation);
+      
+      // Connect chronicle:focus-chapter events to map updates
+      window.addEventListener('chronicle:focus-chapter', (event) => {
+        const chapterId = event.detail?.chapterId;
+        if (!chapterId || !chaptersById.has(chapterId)) return;
+        const chapter = chaptersById.get(chapterId);
+        setActiveLocation(chapter.locationId, chapter);
+      });
     }
 
     init().catch((error) => {

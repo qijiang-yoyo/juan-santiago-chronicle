@@ -328,5 +328,40 @@
       "artifactLabel": "Artifact readiness",
       "artifact": "Mentorship legacy chapter"
     }
+  },
+  {
+    "id": "leading-world-class",
+    "phase": "Future",
+    "range": "2026-forward",
+    "title": "Leading world-class research into the future",
+    "dek": "Continuing to advance microfluidics, electrokinetics, and diagnostic technologies while shaping the next generation of engineering leaders.",
+    "narrative": [
+      "As a member of the National Academy of Engineering and Vice Chair of Stanford's Mechanical Engineering Department, Santiago continues to lead cutting-edge research while mentoring the next generation of engineers and scientists.",
+      "His ongoing work in CRISPR diagnostics, water treatment technologies, and microscale transport phenomena positions his laboratory at the forefront of addressing global challenges in health, environment, and sustainability."
+    ],
+    "proofPoints": [
+      "Active research program in microfluidics and diagnostics",
+      "Leadership role in Stanford Mechanical Engineering",
+      "Ongoing mentorship of graduate students and postdocs",
+      "Continued innovation in water treatment and diagnostic technologies"
+    ],
+    "locationId": "stanford",
+    "locationIds": ["stanford"],
+    "mapCaption": "Continuing leadership in research, education, and innovation at Stanford University.",
+    "mapCamera": {
+      "center": [-122.1697, 37.4275],
+      "zoom": 9.5,
+      "pitch": 35,
+      "bearing": 15
+    },
+    "sources": ["dossier", "stanford-profile"],
+    "evidenceProfile": {
+      "stanceLabel": "Evidence stance",
+      "stance": "Forward-looking chapter",
+      "strengthLabel": "Source mix",
+      "strength": "Current position and ongoing research",
+      "artifactLabel": "Artifact readiness",
+      "artifact": "Future direction chapter"
+    }
   }
 ]
